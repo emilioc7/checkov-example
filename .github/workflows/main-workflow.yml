@@ -8,6 +8,6 @@ jobs:
     uses: emilioc7/devops-resources/.github/workflows/scan-checkov.yml@main
     with:
       checkov_version: "3.2.220"
-      publicMessage: "This is a public message"
+      publicMessage: "This is a public message - NEW"
     secrets:
       secretMessage: ${{ secrets.SECRET_MESSAGE }}
