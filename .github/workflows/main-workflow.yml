@@ -1,0 +1,13 @@
+name: Reusable Caller
+
+on:
+  workflow_call:
+
+jobs:
+  call-checkov-scan-template:
+    uses: emilioc7/devops-resources/edit/main/.github/workflows/scan-checkov.yml@main
+    with:
+      checkov_version: "3.2.220"
+      publicMessage: "This is a public message"
+    secrets:
+      secretMessage: ${{ secrets.SECRET_MESSAGE }}
