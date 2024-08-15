@@ -1,7 +1,7 @@
 name: Reusable Caller
 
 on:
-  workflow_call:
+  push: 
 
 jobs:
   call-checkov-scan-template:
