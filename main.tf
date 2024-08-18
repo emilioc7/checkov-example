@@ -22,6 +22,7 @@ resource "azurerm_storage_account" "tfstate" {
   account_tier             = "Standard"
   account_replication_type = "LRS"
   public_network_access_enabled = true
+  min_tls_version = "TLS1_2"
 
   tags = {
     environment = "staging"  
