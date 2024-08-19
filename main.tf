@@ -21,7 +21,7 @@ resource "azurerm_storage_account" "tfstate" {
   location                        = azurerm_resource_group.rg.location
   account_tier                    = "Standard"
   account_replication_type        = "GRS"
-  public_network_access_enabled   = true
+  public_network_access_enabled   = false
   min_tls_version                 = "TLS1_2"
   allow_nested_items_to_be_public = false
   shared_access_key_enabled       = false
@@ -66,7 +66,7 @@ resource "azurerm_storage_account" "tfstate" {
 resource "azurerm_storage_container" "tfstate" {
   name                  = "tfstate"
   storage_account_name  = azurerm_storage_account.tfstate.name
-  container_access_type = "blob"
+  container_access_type = "private"
 }
 
 resource "azurerm_log_analytics_workspace" "analytics_workspace_ok" {
@@ -86,4 +86,19 @@ resource "azurerm_log_analytics_storage_insights" "analytics_storage_insights_ok
   storage_account_id   = azurerm_storage_account.tfstate.id
   storage_account_key  = azurerm_storage_account.tfstate.primary_access_key
   blob_container_names = ["tfstate"]
+}
+
+
+resource "azurerm_private_endpoint" "example" {
+  name                 = "example_private_endpoint"
+  location             = azurerm_resource_group.rg.location
+  resource_group_name  = azurerm_resource_group.rg.name
+  subnet_id            = azurerm_subnet.example.id
+
+  private_service_connection {
+    name                           = "example_psc"
+    is_manual_connection           = false
+    private_connection_resource_id = azurerm_storage_account.tfstate.id
+    subresource_names              = ["blob"]
+  }
 }
