@@ -1,0 +1,130 @@
+{
+    "schema": "https://gitlab.com/gitlab-org/security-products/security-report-schemas/-/raw/v15.0.4/dist/sast-report-format.json",
+    "version": "15.0.4",
+    "scan": {
+        "start_time": "2024-08-19T22:20:28",
+        "end_time": "2024-08-19T22:20:28",
+        "analyzer": {
+            "id": "checkov",
+            "name": "Checkov",
+            "url": "https://www.checkov.io/",
+            "vendor": {
+                "name": "Bridgecrew"
+            },
+            "version": "3.2.230"
+        },
+        "scanner": {
+            "id": "checkov",
+            "name": "Checkov",
+            "url": "https://www.checkov.io/",
+            "vendor": {
+                "name": "Bridgecrew"
+            },
+            "version": "3.2.230"
+        },
+        "status": "success",
+        "type": "sast"
+    },
+    "vulnerabilities": [
+        {
+            "id": "87b6a6fe-662b-49e0-9ec7-80d3eea05dd5",
+            "identifiers": [
+                {
+                    "name": "CKV_AZURE_33",
+                    "type": "checkov",
+                    "value": "CKV_AZURE_33",
+                    "url": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-logging-policies/enable-requests-on-storage-logging-for-queue-service"
+                }
+            ],
+            "location": {
+                "file": "main.tf",
+                "start_line": 18,
+                "end_line": 31
+            },
+            "name": "Ensure Storage logging is enabled for Queue service for read, write and delete requests",
+            "description": "Further info can be found https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-logging-policies/enable-requests-on-storage-logging-for-queue-service",
+            "severity": "Unknown",
+            "solution": "Further info can be found https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-logging-policies/enable-requests-on-storage-logging-for-queue-service",
+            "links": [
+                {
+                    "url": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-logging-policies/enable-requests-on-storage-logging-for-queue-service"
+                }
+            ]
+        },
+        {
+            "id": "197708ca-8476-4f1c-8cae-5538f739f2e8",
+            "identifiers": [
+                {
+                    "name": "CKV_AZURE_59",
+                    "type": "checkov",
+                    "value": "CKV_AZURE_59",
+                    "url": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-networking-policies/ensure-that-storage-accounts-disallow-public-access"
+                }
+            ],
+            "location": {
+                "file": "main.tf",
+                "start_line": 18,
+                "end_line": 31
+            },
+            "name": "Ensure that Storage accounts disallow public access",
+            "description": "Further info can be found https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-networking-policies/ensure-that-storage-accounts-disallow-public-access",
+            "severity": "Unknown",
+            "solution": "Further info can be found https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-networking-policies/ensure-that-storage-accounts-disallow-public-access",
+            "links": [
+                {
+                    "url": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-networking-policies/ensure-that-storage-accounts-disallow-public-access"
+                }
+            ]
+        },
+        {
+            "id": "839057c8-aa6f-46e3-89d1-d85261b4351f",
+            "identifiers": [
+                {
+                    "name": "CKV_AZURE_206",
+                    "type": "checkov",
+                    "value": "CKV_AZURE_206",
+                    "url": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-general-policies/azr-general-206"
+                }
+            ],
+            "location": {
+                "file": "main.tf",
+                "start_line": 18,
+                "end_line": 31
+            },
+            "name": "Ensure that Storage Accounts use replication",
+            "description": "Further info can be found https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-general-policies/azr-general-206",
+            "severity": "Unknown",
+            "solution": "Further info can be found https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-general-policies/azr-general-206",
+            "links": [
+                {
+                    "url": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-general-policies/azr-general-206"
+                }
+            ]
+        },
+        {
+            "id": "fd36d9ed-a3a9-45e5-92de-aa2ca4d33d56",
+            "identifiers": [
+                {
+                    "name": "CKV_AZURE_34",
+                    "type": "checkov",
+                    "value": "CKV_AZURE_34",
+                    "url": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-networking-policies/set-public-access-level-to-private-for-blob-containers"
+                }
+            ],
+            "location": {
+                "file": "main.tf",
+                "start_line": 33,
+                "end_line": 37
+            },
+            "name": "Ensure that 'Public access level' is set to Private for blob containers",
+            "description": "Further info can be found https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-networking-policies/set-public-access-level-to-private-for-blob-containers",
+            "severity": "Unknown",
+            "solution": "Further info can be found https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-networking-policies/set-public-access-level-to-private-for-blob-containers",
+            "links": [
+                {
+                    "url": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-networking-policies/set-public-access-level-to-private-for-blob-containers"
+                }
+            ]
+        }
+    ]
+}

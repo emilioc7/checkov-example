@@ -1,0 +1,920 @@
+{
+    "check_type": "terraform",
+    "results": {
+        "passed_checks": [
+            {
+                "check_id": "CKV_AZURE_44",
+                "bc_check_id": "BC_AZR_STORAGE_2",
+                "check_name": "Ensure Storage Account is using the latest version of TLS encryption",
+                "check_result": {
+                    "result": "PASSED",
+                    "evaluated_keys": [
+                        "min_tls_version"
+                    ]
+                },
+                "code_block": [
+                    [
+                        18,
+                        "resource \"azurerm_storage_account\" \"tfstate\" {\n"
+                    ],
+                    [
+                        19,
+                        "  name                     = \"tfstate${random_string.resource_code.result}\"\n"
+                    ],
+                    [
+                        20,
+                        "  resource_group_name      = azurerm_resource_group.rg.name\n"
+                    ],
+                    [
+                        21,
+                        "  location                 = azurerm_resource_group.rg.location\n"
+                    ],
+                    [
+                        22,
+                        "  account_tier             = \"Standard\"\n"
+                    ],
+                    [
+                        23,
+                        "  account_replication_type = \"LRS\"\n"
+                    ],
+                    [
+                        24,
+                        "  public_network_access_enabled = true\n"
+                    ],
+                    [
+                        25,
+                        "  min_tls_version = \"TLS1_2\"\n"
+                    ],
+                    [
+                        26,
+                        "  allow_nested_items_to_be_public = false\n"
+                    ],
+                    [
+                        27,
+                        "\n"
+                    ],
+                    [
+                        28,
+                        "  tags = {\n"
+                    ],
+                    [
+                        29,
+                        "    environment = \"staging\"  \n"
+                    ],
+                    [
+                        30,
+                        "  }\n"
+                    ],
+                    [
+                        31,
+                        "}\n"
+                    ]
+                ],
+                "file_path": "/main.tf",
+                "file_abs_path": "/Users/emilio/Documents/LocalMyProjects/VSCode/Terraform/Checkov/checkov-example/main.tf",
+                "repo_file_path": "/main.tf",
+                "file_line_range": [
+                    18,
+                    31
+                ],
+                "resource": "azurerm_storage_account.tfstate",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.azure.StorageAccountMinimumTlsVersion",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-storage-policies/bc-azr-storage-2",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/Users/emilio/Documents/LocalMyProjects/VSCode/Terraform/Checkov/checkov-example/main.tf",
+                "breadcrumbs": {
+                    "resource_group_name": [
+                        {
+                            "type": "resource",
+                            "name": "azurerm_resource_group.rg",
+                            "path": "/Users/emilio/Documents/LocalMyProjects/VSCode/Terraform/Checkov/checkov-example/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "location": [
+                        {
+                            "type": "variable",
+                            "name": "resource_group_location",
+                            "path": "/Users/emilio/Documents/LocalMyProjects/VSCode/Terraform/Checkov/checkov-example/variables.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "resource",
+                            "name": "azurerm_resource_group.rg",
+                            "path": "/Users/emilio/Documents/LocalMyProjects/VSCode/Terraform/Checkov/checkov-example/main.tf",
+                            "module_connection": false
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV_AZURE_36",
+                "bc_check_id": "BC_AZR_NETWORKING_16",
+                "check_name": "Ensure 'Trusted Microsoft Services' is enabled for Storage Account access",
+                "check_result": {
+                    "result": "PASSED",
+                    "evaluated_keys": []
+                },
+                "code_block": [
+                    [
+                        18,
+                        "resource \"azurerm_storage_account\" \"tfstate\" {\n"
+                    ],
+                    [
+                        19,
+                        "  name                     = \"tfstate${random_string.resource_code.result}\"\n"
+                    ],
+                    [
+                        20,
+                        "  resource_group_name      = azurerm_resource_group.rg.name\n"
+                    ],
+                    [
+                        21,
+                        "  location                 = azurerm_resource_group.rg.location\n"
+                    ],
+                    [
+                        22,
+                        "  account_tier             = \"Standard\"\n"
+                    ],
+                    [
+                        23,
+                        "  account_replication_type = \"LRS\"\n"
+                    ],
+                    [
+                        24,
+                        "  public_network_access_enabled = true\n"
+                    ],
+                    [
+                        25,
+                        "  min_tls_version = \"TLS1_2\"\n"
+                    ],
+                    [
+                        26,
+                        "  allow_nested_items_to_be_public = false\n"
+                    ],
+                    [
+                        27,
+                        "\n"
+                    ],
+                    [
+                        28,
+                        "  tags = {\n"
+                    ],
+                    [
+                        29,
+                        "    environment = \"staging\"  \n"
+                    ],
+                    [
+                        30,
+                        "  }\n"
+                    ],
+                    [
+                        31,
+                        "}\n"
+                    ]
+                ],
+                "file_path": "/main.tf",
+                "file_abs_path": "/Users/emilio/Documents/LocalMyProjects/VSCode/Terraform/Checkov/checkov-example/main.tf",
+                "repo_file_path": "/main.tf",
+                "file_line_range": [
+                    18,
+                    31
+                ],
+                "resource": "azurerm_storage_account.tfstate",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.azure.StorageAccountAzureServicesAccessEnabled",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-networking-policies/enable-trusted-microsoft-services-for-storage-account-access",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/Users/emilio/Documents/LocalMyProjects/VSCode/Terraform/Checkov/checkov-example/main.tf",
+                "breadcrumbs": {
+                    "resource_group_name": [
+                        {
+                            "type": "resource",
+                            "name": "azurerm_resource_group.rg",
+                            "path": "/Users/emilio/Documents/LocalMyProjects/VSCode/Terraform/Checkov/checkov-example/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "location": [
+                        {
+                            "type": "variable",
+                            "name": "resource_group_location",
+                            "path": "/Users/emilio/Documents/LocalMyProjects/VSCode/Terraform/Checkov/checkov-example/variables.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "resource",
+                            "name": "azurerm_resource_group.rg",
+                            "path": "/Users/emilio/Documents/LocalMyProjects/VSCode/Terraform/Checkov/checkov-example/main.tf",
+                            "module_connection": false
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV_AZURE_3",
+                "bc_check_id": "BC_AZR_GENERAL_117",
+                "check_name": "Ensure that 'enable_https_traffic_only' is enabled",
+                "check_result": {
+                    "result": "PASSED",
+                    "evaluated_keys": [
+                        "enable_https_traffic_only"
+                    ]
+                },
+                "code_block": [
+                    [
+                        18,
+                        "resource \"azurerm_storage_account\" \"tfstate\" {\n"
+                    ],
+                    [
+                        19,
+                        "  name                     = \"tfstate${random_string.resource_code.result}\"\n"
+                    ],
+                    [
+                        20,
+                        "  resource_group_name      = azurerm_resource_group.rg.name\n"
+                    ],
+                    [
+                        21,
+                        "  location                 = azurerm_resource_group.rg.location\n"
+                    ],
+                    [
+                        22,
+                        "  account_tier             = \"Standard\"\n"
+                    ],
+                    [
+                        23,
+                        "  account_replication_type = \"LRS\"\n"
+                    ],
+                    [
+                        24,
+                        "  public_network_access_enabled = true\n"
+                    ],
+                    [
+                        25,
+                        "  min_tls_version = \"TLS1_2\"\n"
+                    ],
+                    [
+                        26,
+                        "  allow_nested_items_to_be_public = false\n"
+                    ],
+                    [
+                        27,
+                        "\n"
+                    ],
+                    [
+                        28,
+                        "  tags = {\n"
+                    ],
+                    [
+                        29,
+                        "    environment = \"staging\"  \n"
+                    ],
+                    [
+                        30,
+                        "  }\n"
+                    ],
+                    [
+                        31,
+                        "}\n"
+                    ]
+                ],
+                "file_path": "/main.tf",
+                "file_abs_path": "/Users/emilio/Documents/LocalMyProjects/VSCode/Terraform/Checkov/checkov-example/main.tf",
+                "repo_file_path": "/main.tf",
+                "file_line_range": [
+                    18,
+                    31
+                ],
+                "resource": "azurerm_storage_account.tfstate",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.azure.StorageAccountsTransportEncryption",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-general-policies/azr-general-3",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/Users/emilio/Documents/LocalMyProjects/VSCode/Terraform/Checkov/checkov-example/main.tf",
+                "breadcrumbs": {
+                    "resource_group_name": [
+                        {
+                            "type": "resource",
+                            "name": "azurerm_resource_group.rg",
+                            "path": "/Users/emilio/Documents/LocalMyProjects/VSCode/Terraform/Checkov/checkov-example/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "location": [
+                        {
+                            "type": "variable",
+                            "name": "resource_group_location",
+                            "path": "/Users/emilio/Documents/LocalMyProjects/VSCode/Terraform/Checkov/checkov-example/variables.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "resource",
+                            "name": "azurerm_resource_group.rg",
+                            "path": "/Users/emilio/Documents/LocalMyProjects/VSCode/Terraform/Checkov/checkov-example/main.tf",
+                            "module_connection": false
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV_AZURE_190",
+                "bc_check_id": "BC_AZR_NETWORKING_72",
+                "check_name": "Ensure that Storage blobs restrict public access",
+                "check_result": {
+                    "result": "PASSED",
+                    "evaluated_keys": [
+                        "allow_nested_items_to_be_public"
+                    ]
+                },
+                "code_block": [
+                    [
+                        18,
+                        "resource \"azurerm_storage_account\" \"tfstate\" {\n"
+                    ],
+                    [
+                        19,
+                        "  name                     = \"tfstate${random_string.resource_code.result}\"\n"
+                    ],
+                    [
+                        20,
+                        "  resource_group_name      = azurerm_resource_group.rg.name\n"
+                    ],
+                    [
+                        21,
+                        "  location                 = azurerm_resource_group.rg.location\n"
+                    ],
+                    [
+                        22,
+                        "  account_tier             = \"Standard\"\n"
+                    ],
+                    [
+                        23,
+                        "  account_replication_type = \"LRS\"\n"
+                    ],
+                    [
+                        24,
+                        "  public_network_access_enabled = true\n"
+                    ],
+                    [
+                        25,
+                        "  min_tls_version = \"TLS1_2\"\n"
+                    ],
+                    [
+                        26,
+                        "  allow_nested_items_to_be_public = false\n"
+                    ],
+                    [
+                        27,
+                        "\n"
+                    ],
+                    [
+                        28,
+                        "  tags = {\n"
+                    ],
+                    [
+                        29,
+                        "    environment = \"staging\"  \n"
+                    ],
+                    [
+                        30,
+                        "  }\n"
+                    ],
+                    [
+                        31,
+                        "}\n"
+                    ]
+                ],
+                "file_path": "/main.tf",
+                "file_abs_path": "/Users/emilio/Documents/LocalMyProjects/VSCode/Terraform/Checkov/checkov-example/main.tf",
+                "repo_file_path": "/main.tf",
+                "file_line_range": [
+                    18,
+                    31
+                ],
+                "resource": "azurerm_storage_account.tfstate",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.azure.StorageBlobRestrictPublicAccess",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-networking-policies/azr-networking-190",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/Users/emilio/Documents/LocalMyProjects/VSCode/Terraform/Checkov/checkov-example/main.tf",
+                "breadcrumbs": {
+                    "resource_group_name": [
+                        {
+                            "type": "resource",
+                            "name": "azurerm_resource_group.rg",
+                            "path": "/Users/emilio/Documents/LocalMyProjects/VSCode/Terraform/Checkov/checkov-example/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "location": [
+                        {
+                            "type": "variable",
+                            "name": "resource_group_location",
+                            "path": "/Users/emilio/Documents/LocalMyProjects/VSCode/Terraform/Checkov/checkov-example/variables.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "resource",
+                            "name": "azurerm_resource_group.rg",
+                            "path": "/Users/emilio/Documents/LocalMyProjects/VSCode/Terraform/Checkov/checkov-example/main.tf",
+                            "module_connection": false
+                        }
+                    ]
+                }
+            }
+        ],
+        "failed_checks": [
+            {
+                "check_id": "CKV_AZURE_33",
+                "bc_check_id": "BC_AZR_LOGGING_4",
+                "check_name": "Ensure Storage logging is enabled for Queue service for read, write and delete requests",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "account_kind"
+                    ]
+                },
+                "code_block": [
+                    [
+                        18,
+                        "resource \"azurerm_storage_account\" \"tfstate\" {\n"
+                    ],
+                    [
+                        19,
+                        "  name                     = \"tfstate${random_string.resource_code.result}\"\n"
+                    ],
+                    [
+                        20,
+                        "  resource_group_name      = azurerm_resource_group.rg.name\n"
+                    ],
+                    [
+                        21,
+                        "  location                 = azurerm_resource_group.rg.location\n"
+                    ],
+                    [
+                        22,
+                        "  account_tier             = \"Standard\"\n"
+                    ],
+                    [
+                        23,
+                        "  account_replication_type = \"LRS\"\n"
+                    ],
+                    [
+                        24,
+                        "  public_network_access_enabled = true\n"
+                    ],
+                    [
+                        25,
+                        "  min_tls_version = \"TLS1_2\"\n"
+                    ],
+                    [
+                        26,
+                        "  allow_nested_items_to_be_public = false\n"
+                    ],
+                    [
+                        27,
+                        "\n"
+                    ],
+                    [
+                        28,
+                        "  tags = {\n"
+                    ],
+                    [
+                        29,
+                        "    environment = \"staging\"  \n"
+                    ],
+                    [
+                        30,
+                        "  }\n"
+                    ],
+                    [
+                        31,
+                        "}\n"
+                    ]
+                ],
+                "file_path": "/main.tf",
+                "file_abs_path": "/Users/emilio/Documents/LocalMyProjects/VSCode/Terraform/Checkov/checkov-example/main.tf",
+                "repo_file_path": "/main.tf",
+                "file_line_range": [
+                    18,
+                    31
+                ],
+                "resource": "azurerm_storage_account.tfstate",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.azure.StorageAccountLoggingQueueServiceEnabled",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-logging-policies/enable-requests-on-storage-logging-for-queue-service",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/Users/emilio/Documents/LocalMyProjects/VSCode/Terraform/Checkov/checkov-example/main.tf",
+                "breadcrumbs": {
+                    "resource_group_name": [
+                        {
+                            "type": "resource",
+                            "name": "azurerm_resource_group.rg",
+                            "path": "/Users/emilio/Documents/LocalMyProjects/VSCode/Terraform/Checkov/checkov-example/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "location": [
+                        {
+                            "type": "variable",
+                            "name": "resource_group_location",
+                            "path": "/Users/emilio/Documents/LocalMyProjects/VSCode/Terraform/Checkov/checkov-example/variables.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "resource",
+                            "name": "azurerm_resource_group.rg",
+                            "path": "/Users/emilio/Documents/LocalMyProjects/VSCode/Terraform/Checkov/checkov-example/main.tf",
+                            "module_connection": false
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV_AZURE_59",
+                "bc_check_id": "BC_AZR_NETWORKING_18",
+                "check_name": "Ensure that Storage accounts disallow public access",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "public_network_access_enabled"
+                    ]
+                },
+                "code_block": [
+                    [
+                        18,
+                        "resource \"azurerm_storage_account\" \"tfstate\" {\n"
+                    ],
+                    [
+                        19,
+                        "  name                     = \"tfstate${random_string.resource_code.result}\"\n"
+                    ],
+                    [
+                        20,
+                        "  resource_group_name      = azurerm_resource_group.rg.name\n"
+                    ],
+                    [
+                        21,
+                        "  location                 = azurerm_resource_group.rg.location\n"
+                    ],
+                    [
+                        22,
+                        "  account_tier             = \"Standard\"\n"
+                    ],
+                    [
+                        23,
+                        "  account_replication_type = \"LRS\"\n"
+                    ],
+                    [
+                        24,
+                        "  public_network_access_enabled = true\n"
+                    ],
+                    [
+                        25,
+                        "  min_tls_version = \"TLS1_2\"\n"
+                    ],
+                    [
+                        26,
+                        "  allow_nested_items_to_be_public = false\n"
+                    ],
+                    [
+                        27,
+                        "\n"
+                    ],
+                    [
+                        28,
+                        "  tags = {\n"
+                    ],
+                    [
+                        29,
+                        "    environment = \"staging\"  \n"
+                    ],
+                    [
+                        30,
+                        "  }\n"
+                    ],
+                    [
+                        31,
+                        "}\n"
+                    ]
+                ],
+                "file_path": "/main.tf",
+                "file_abs_path": "/Users/emilio/Documents/LocalMyProjects/VSCode/Terraform/Checkov/checkov-example/main.tf",
+                "repo_file_path": "/main.tf",
+                "file_line_range": [
+                    18,
+                    31
+                ],
+                "resource": "azurerm_storage_account.tfstate",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.azure.StorageAccountDisablePublicAccess",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-networking-policies/ensure-that-storage-accounts-disallow-public-access",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/Users/emilio/Documents/LocalMyProjects/VSCode/Terraform/Checkov/checkov-example/main.tf",
+                "breadcrumbs": {
+                    "resource_group_name": [
+                        {
+                            "type": "resource",
+                            "name": "azurerm_resource_group.rg",
+                            "path": "/Users/emilio/Documents/LocalMyProjects/VSCode/Terraform/Checkov/checkov-example/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "location": [
+                        {
+                            "type": "variable",
+                            "name": "resource_group_location",
+                            "path": "/Users/emilio/Documents/LocalMyProjects/VSCode/Terraform/Checkov/checkov-example/variables.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "resource",
+                            "name": "azurerm_resource_group.rg",
+                            "path": "/Users/emilio/Documents/LocalMyProjects/VSCode/Terraform/Checkov/checkov-example/main.tf",
+                            "module_connection": false
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV_AZURE_206",
+                "bc_check_id": "BC_AZR_GENERAL_111",
+                "check_name": "Ensure that Storage Accounts use replication",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "account_replication_type"
+                    ]
+                },
+                "code_block": [
+                    [
+                        18,
+                        "resource \"azurerm_storage_account\" \"tfstate\" {\n"
+                    ],
+                    [
+                        19,
+                        "  name                     = \"tfstate${random_string.resource_code.result}\"\n"
+                    ],
+                    [
+                        20,
+                        "  resource_group_name      = azurerm_resource_group.rg.name\n"
+                    ],
+                    [
+                        21,
+                        "  location                 = azurerm_resource_group.rg.location\n"
+                    ],
+                    [
+                        22,
+                        "  account_tier             = \"Standard\"\n"
+                    ],
+                    [
+                        23,
+                        "  account_replication_type = \"LRS\"\n"
+                    ],
+                    [
+                        24,
+                        "  public_network_access_enabled = true\n"
+                    ],
+                    [
+                        25,
+                        "  min_tls_version = \"TLS1_2\"\n"
+                    ],
+                    [
+                        26,
+                        "  allow_nested_items_to_be_public = false\n"
+                    ],
+                    [
+                        27,
+                        "\n"
+                    ],
+                    [
+                        28,
+                        "  tags = {\n"
+                    ],
+                    [
+                        29,
+                        "    environment = \"staging\"  \n"
+                    ],
+                    [
+                        30,
+                        "  }\n"
+                    ],
+                    [
+                        31,
+                        "}\n"
+                    ]
+                ],
+                "file_path": "/main.tf",
+                "file_abs_path": "/Users/emilio/Documents/LocalMyProjects/VSCode/Terraform/Checkov/checkov-example/main.tf",
+                "repo_file_path": "/main.tf",
+                "file_line_range": [
+                    18,
+                    31
+                ],
+                "resource": "azurerm_storage_account.tfstate",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.azure.StorageAccountsUseReplication",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-general-policies/azr-general-206",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/Users/emilio/Documents/LocalMyProjects/VSCode/Terraform/Checkov/checkov-example/main.tf",
+                "breadcrumbs": {
+                    "resource_group_name": [
+                        {
+                            "type": "resource",
+                            "name": "azurerm_resource_group.rg",
+                            "path": "/Users/emilio/Documents/LocalMyProjects/VSCode/Terraform/Checkov/checkov-example/main.tf",
+                            "module_connection": false
+                        }
+                    ],
+                    "location": [
+                        {
+                            "type": "variable",
+                            "name": "resource_group_location",
+                            "path": "/Users/emilio/Documents/LocalMyProjects/VSCode/Terraform/Checkov/checkov-example/variables.tf",
+                            "module_connection": false
+                        },
+                        {
+                            "type": "resource",
+                            "name": "azurerm_resource_group.rg",
+                            "path": "/Users/emilio/Documents/LocalMyProjects/VSCode/Terraform/Checkov/checkov-example/main.tf",
+                            "module_connection": false
+                        }
+                    ]
+                }
+            },
+            {
+                "check_id": "CKV_AZURE_34",
+                "bc_check_id": "BC_AZR_NETWORKING_14",
+                "check_name": "Ensure that 'Public access level' is set to Private for blob containers",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "container_access_type/[0]"
+                    ]
+                },
+                "code_block": [
+                    [
+                        33,
+                        "resource \"azurerm_storage_container\" \"tfstate\" {\n"
+                    ],
+                    [
+                        34,
+                        "  name                  = \"tfstate\"\n"
+                    ],
+                    [
+                        35,
+                        "  storage_account_name  = azurerm_storage_account.tfstate.name\n"
+                    ],
+                    [
+                        36,
+                        "  container_access_type = \"blob\"\n"
+                    ],
+                    [
+                        37,
+                        "}"
+                    ]
+                ],
+                "file_path": "/main.tf",
+                "file_abs_path": "/Users/emilio/Documents/LocalMyProjects/VSCode/Terraform/Checkov/checkov-example/main.tf",
+                "repo_file_path": "/main.tf",
+                "file_line_range": [
+                    33,
+                    37
+                ],
+                "resource": "azurerm_storage_container.tfstate",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.azure.StorageBlobServiceContainerPrivateAccess",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-networking-policies/set-public-access-level-to-private-for-blob-containers",
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/Users/emilio/Documents/LocalMyProjects/VSCode/Terraform/Checkov/checkov-example/main.tf",
+                "breadcrumbs": {
+                    "storage_account_name": [
+                        {
+                            "type": "resource",
+                            "name": "azurerm_storage_account.tfstate",
+                            "path": "/Users/emilio/Documents/LocalMyProjects/VSCode/Terraform/Checkov/checkov-example/main.tf",
+                            "module_connection": false
+                        }
+                    ]
+                }
+            }
+        ],
+        "skipped_checks": [],
+        "parsing_errors": []
+    },
+    "summary": {
+        "passed": 4,
+        "failed": 4,
+        "skipped": 0,
+        "parsing_errors": 0,
+        "resource_count": 5,
+        "checkov_version": "3.2.230"
+    },
+    "url": "Add an api key '--bc-api-key <api-key>' to see more detailed insights via https://bridgecrew.cloud"
+}

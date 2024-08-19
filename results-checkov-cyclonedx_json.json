@@ -1,0 +1,268 @@
+{
+    "components": [
+        {
+            "bom-ref": "pkg:terraform/cli_repo/checkov-example/main.tf/azurerm_resource_group.rg@sha1:ebc558617ed696f52244b445e8ec25cd22ecf0b9",
+            "hashes": [
+                {
+                    "alg": "SHA-1",
+                    "content": "ebc558617ed696f52244b445e8ec25cd22ecf0b9"
+                }
+            ],
+            "name": "azurerm_resource_group.rg",
+            "purl": "pkg:terraform/cli_repo/checkov-example/main.tf/azurerm_resource_group.rg@sha1:ebc558617ed696f52244b445e8ec25cd22ecf0b9",
+            "type": "application",
+            "version": "sha1:ebc558617ed696f52244b445e8ec25cd22ecf0b9"
+        },
+        {
+            "bom-ref": "pkg:terraform/cli_repo/checkov-example/main.tf/azurerm_storage_account.tfstate@sha1:ebc558617ed696f52244b445e8ec25cd22ecf0b9",
+            "hashes": [
+                {
+                    "alg": "SHA-1",
+                    "content": "ebc558617ed696f52244b445e8ec25cd22ecf0b9"
+                }
+            ],
+            "name": "azurerm_storage_account.tfstate",
+            "purl": "pkg:terraform/cli_repo/checkov-example/main.tf/azurerm_storage_account.tfstate@sha1:ebc558617ed696f52244b445e8ec25cd22ecf0b9",
+            "type": "application",
+            "version": "sha1:ebc558617ed696f52244b445e8ec25cd22ecf0b9"
+        },
+        {
+            "bom-ref": "pkg:terraform/cli_repo/checkov-example/main.tf/azurerm_storage_container.tfstate@sha1:ebc558617ed696f52244b445e8ec25cd22ecf0b9",
+            "hashes": [
+                {
+                    "alg": "SHA-1",
+                    "content": "ebc558617ed696f52244b445e8ec25cd22ecf0b9"
+                }
+            ],
+            "name": "azurerm_storage_container.tfstate",
+            "purl": "pkg:terraform/cli_repo/checkov-example/main.tf/azurerm_storage_container.tfstate@sha1:ebc558617ed696f52244b445e8ec25cd22ecf0b9",
+            "type": "application",
+            "version": "sha1:ebc558617ed696f52244b445e8ec25cd22ecf0b9"
+        },
+        {
+            "bom-ref": "pkg:terraform/cli_repo/checkov-example/main.tf/random_pet.rg_name@sha1:ebc558617ed696f52244b445e8ec25cd22ecf0b9",
+            "hashes": [
+                {
+                    "alg": "SHA-1",
+                    "content": "ebc558617ed696f52244b445e8ec25cd22ecf0b9"
+                }
+            ],
+            "name": "random_pet.rg_name",
+            "purl": "pkg:terraform/cli_repo/checkov-example/main.tf/random_pet.rg_name@sha1:ebc558617ed696f52244b445e8ec25cd22ecf0b9",
+            "type": "application",
+            "version": "sha1:ebc558617ed696f52244b445e8ec25cd22ecf0b9"
+        },
+        {
+            "bom-ref": "pkg:terraform/cli_repo/checkov-example/main.tf/random_string.resource_code@sha1:ebc558617ed696f52244b445e8ec25cd22ecf0b9",
+            "hashes": [
+                {
+                    "alg": "SHA-1",
+                    "content": "ebc558617ed696f52244b445e8ec25cd22ecf0b9"
+                }
+            ],
+            "name": "random_string.resource_code",
+            "purl": "pkg:terraform/cli_repo/checkov-example/main.tf/random_string.resource_code@sha1:ebc558617ed696f52244b445e8ec25cd22ecf0b9",
+            "type": "application",
+            "version": "sha1:ebc558617ed696f52244b445e8ec25cd22ecf0b9"
+        }
+    ],
+    "dependencies": [
+        {
+            "ref": "pkg:terraform/cli_repo/checkov-example/main.tf/azurerm_resource_group.rg@sha1:ebc558617ed696f52244b445e8ec25cd22ecf0b9"
+        },
+        {
+            "ref": "pkg:terraform/cli_repo/checkov-example/main.tf/azurerm_storage_account.tfstate@sha1:ebc558617ed696f52244b445e8ec25cd22ecf0b9"
+        },
+        {
+            "ref": "pkg:terraform/cli_repo/checkov-example/main.tf/azurerm_storage_container.tfstate@sha1:ebc558617ed696f52244b445e8ec25cd22ecf0b9"
+        },
+        {
+            "ref": "pkg:terraform/cli_repo/checkov-example/main.tf/random_pet.rg_name@sha1:ebc558617ed696f52244b445e8ec25cd22ecf0b9"
+        },
+        {
+            "ref": "pkg:terraform/cli_repo/checkov-example/main.tf/random_string.resource_code@sha1:ebc558617ed696f52244b445e8ec25cd22ecf0b9"
+        }
+    ],
+    "metadata": {
+        "timestamp": "2024-08-19T22:14:08.375013+00:00",
+        "tools": [
+            {
+                "externalReferences": [
+                    {
+                        "type": "build-system",
+                        "url": "https://github.com/CycloneDX/cyclonedx-python-lib/actions"
+                    },
+                    {
+                        "type": "distribution",
+                        "url": "https://pypi.org/project/cyclonedx-python-lib/"
+                    },
+                    {
+                        "type": "documentation",
+                        "url": "https://cyclonedx-python-library.readthedocs.io/"
+                    },
+                    {
+                        "type": "issue-tracker",
+                        "url": "https://github.com/CycloneDX/cyclonedx-python-lib/issues"
+                    },
+                    {
+                        "type": "license",
+                        "url": "https://github.com/CycloneDX/cyclonedx-python-lib/blob/main/LICENSE"
+                    },
+                    {
+                        "type": "release-notes",
+                        "url": "https://github.com/CycloneDX/cyclonedx-python-lib/blob/main/CHANGELOG.md"
+                    },
+                    {
+                        "type": "vcs",
+                        "url": "https://github.com/CycloneDX/cyclonedx-python-lib"
+                    },
+                    {
+                        "type": "website",
+                        "url": "https://github.com/CycloneDX/cyclonedx-python-lib/#readme"
+                    }
+                ],
+                "name": "cyclonedx-python-lib",
+                "vendor": "CycloneDX",
+                "version": "6.4.4"
+            },
+            {
+                "externalReferences": [
+                    {
+                        "type": "build-system",
+                        "url": "https://github.com/bridgecrewio/checkov/actions"
+                    },
+                    {
+                        "type": "distribution",
+                        "url": "https://pypi.org/project/checkov/"
+                    },
+                    {
+                        "type": "documentation",
+                        "url": "https://www.checkov.io/1.Welcome/What%20is%20Checkov.html"
+                    },
+                    {
+                        "type": "issue-tracker",
+                        "url": "https://github.com/bridgecrewio/checkov/issues"
+                    },
+                    {
+                        "type": "license",
+                        "url": "https://github.com/bridgecrewio/checkov/blob/master/LICENSE"
+                    },
+                    {
+                        "type": "social",
+                        "url": "https://twitter.com/bridgecrewio"
+                    },
+                    {
+                        "type": "vcs",
+                        "url": "https://github.com/bridgecrewio/checkov"
+                    },
+                    {
+                        "type": "website",
+                        "url": "https://www.checkov.io/"
+                    }
+                ],
+                "name": "checkov",
+                "vendor": "bridgecrew",
+                "version": "3.2.230"
+            }
+        ]
+    },
+    "serialNumber": "urn:uuid:147df3e2-4302-41b5-a1ad-19ed0f2b9920",
+    "version": 1,
+    "vulnerabilities": [
+        {
+            "advisories": [
+                {
+                    "url": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-general-policies/azr-general-206"
+                }
+            ],
+            "affects": [
+                {
+                    "ref": "pkg:terraform/cli_repo/checkov-example/main.tf/azurerm_storage_account.tfstate@sha1:ebc558617ed696f52244b445e8ec25cd22ecf0b9"
+                }
+            ],
+            "bom-ref": "BomRef.45120317574865754.6906890650110964",
+            "description": "Resource: azurerm_storage_account.tfstate. Ensure that Storage Accounts use replication",
+            "id": "CKV_AZURE_206",
+            "ratings": [
+                {
+                    "severity": "unknown"
+                }
+            ],
+            "source": {
+                "name": "checkov"
+            }
+        },
+        {
+            "advisories": [
+                {
+                    "url": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-logging-policies/enable-requests-on-storage-logging-for-queue-service"
+                }
+            ],
+            "affects": [
+                {
+                    "ref": "pkg:terraform/cli_repo/checkov-example/main.tf/azurerm_storage_account.tfstate@sha1:ebc558617ed696f52244b445e8ec25cd22ecf0b9"
+                }
+            ],
+            "bom-ref": "BomRef.7894562794905341.9588718433744876",
+            "description": "Resource: azurerm_storage_account.tfstate. Ensure Storage logging is enabled for Queue service for read, write and delete requests",
+            "id": "CKV_AZURE_33",
+            "ratings": [
+                {
+                    "severity": "unknown"
+                }
+            ],
+            "source": {
+                "name": "checkov"
+            }
+        },
+        {
+            "advisories": [
+                {
+                    "url": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-networking-policies/set-public-access-level-to-private-for-blob-containers"
+                }
+            ],
+            "affects": [
+                {
+                    "ref": "pkg:terraform/cli_repo/checkov-example/main.tf/azurerm_storage_container.tfstate@sha1:ebc558617ed696f52244b445e8ec25cd22ecf0b9"
+                }
+            ],
+            "bom-ref": "BomRef.5137796147687206.8661739217485938",
+            "description": "Resource: azurerm_storage_container.tfstate. Ensure that 'Public access level' is set to Private for blob containers",
+            "id": "CKV_AZURE_34",
+            "ratings": [
+                {
+                    "severity": "unknown"
+                }
+            ],
+            "source": {
+                "name": "checkov"
+            }
+        },
+        {
+            "advisories": [
+                {
+                    "url": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-networking-policies/ensure-that-storage-accounts-disallow-public-access"
+                }
+            ],
+            "affects": [
+                {
+                    "ref": "pkg:terraform/cli_repo/checkov-example/main.tf/azurerm_storage_account.tfstate@sha1:ebc558617ed696f52244b445e8ec25cd22ecf0b9"
+                }
+            ],
+            "bom-ref": "BomRef.004801381245153058.20143236375444384",
+            "description": "Resource: azurerm_storage_account.tfstate. Ensure that Storage accounts disallow public access",
+            "id": "CKV_AZURE_59",
+            "ratings": [
+                {
+                    "severity": "unknown"
+                }
+            ],
+            "source": {
+                "name": "checkov"
+            }
+        }
+    ],
+    "$schema": "http://cyclonedx.org/schema/bom-1.4.schema.json",
+    "bomFormat": "CycloneDX",
+    "specVersion": "1.4"
+}

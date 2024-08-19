@@ -1,0 +1,209 @@
+<?xml version="1.0" ?>
+<bom xmlns="http://cyclonedx.org/schema/bom/1.4" serialNumber="urn:uuid:435ed51b-7388-486d-bd80-ff9ca0068686" version="1">
+    <metadata>
+        <timestamp>2024-08-19T21:18:46.167103+00:00</timestamp>
+        <tools>
+            <tool>
+                <vendor>CycloneDX</vendor>
+                <name>cyclonedx-python-lib</name>
+                <version>6.4.4</version>
+                <externalReferences>
+                    <reference type="build-system">
+                        <url>https://github.com/CycloneDX/cyclonedx-python-lib/actions</url>
+                    </reference>
+                    <reference type="distribution">
+                        <url>https://pypi.org/project/cyclonedx-python-lib/</url>
+                    </reference>
+                    <reference type="documentation">
+                        <url>https://cyclonedx-python-library.readthedocs.io/</url>
+                    </reference>
+                    <reference type="issue-tracker">
+                        <url>https://github.com/CycloneDX/cyclonedx-python-lib/issues</url>
+                    </reference>
+                    <reference type="license">
+                        <url>https://github.com/CycloneDX/cyclonedx-python-lib/blob/main/LICENSE</url>
+                    </reference>
+                    <reference type="release-notes">
+                        <url>https://github.com/CycloneDX/cyclonedx-python-lib/blob/main/CHANGELOG.md</url>
+                    </reference>
+                    <reference type="vcs">
+                        <url>https://github.com/CycloneDX/cyclonedx-python-lib</url>
+                    </reference>
+                    <reference type="website">
+                        <url>https://github.com/CycloneDX/cyclonedx-python-lib/#readme</url>
+                    </reference>
+                </externalReferences>
+            </tool>
+            <tool>
+                <vendor>bridgecrew</vendor>
+                <name>checkov</name>
+                <version>3.2.230</version>
+                <externalReferences>
+                    <reference type="build-system">
+                        <url>https://github.com/bridgecrewio/checkov/actions</url>
+                    </reference>
+                    <reference type="distribution">
+                        <url>https://pypi.org/project/checkov/</url>
+                    </reference>
+                    <reference type="documentation">
+                        <url>https://www.checkov.io/1.Welcome/What%20is%20Checkov.html</url>
+                    </reference>
+                    <reference type="issue-tracker">
+                        <url>https://github.com/bridgecrewio/checkov/issues</url>
+                    </reference>
+                    <reference type="license">
+                        <url>https://github.com/bridgecrewio/checkov/blob/master/LICENSE</url>
+                    </reference>
+                    <reference type="social">
+                        <url>https://twitter.com/bridgecrewio</url>
+                    </reference>
+                    <reference type="vcs">
+                        <url>https://github.com/bridgecrewio/checkov</url>
+                    </reference>
+                    <reference type="website">
+                        <url>https://www.checkov.io/</url>
+                    </reference>
+                </externalReferences>
+            </tool>
+        </tools>
+    </metadata>
+    <components>
+        <component type="application" bom-ref="pkg:terraform/cli_repo/checkov-example/main.tf/azurerm_resource_group.rg@sha1:ebc558617ed696f52244b445e8ec25cd22ecf0b9">
+            <name>azurerm_resource_group.rg</name>
+            <version>sha1:ebc558617ed696f52244b445e8ec25cd22ecf0b9</version>
+            <hashes>
+                <hash alg="SHA-1">ebc558617ed696f52244b445e8ec25cd22ecf0b9</hash>
+            </hashes>
+            <purl>pkg:terraform/cli_repo/checkov-example/main.tf/azurerm_resource_group.rg@sha1:ebc558617ed696f52244b445e8ec25cd22ecf0b9</purl>
+        </component>
+        <component type="application" bom-ref="pkg:terraform/cli_repo/checkov-example/main.tf/azurerm_storage_account.tfstate@sha1:ebc558617ed696f52244b445e8ec25cd22ecf0b9">
+            <name>azurerm_storage_account.tfstate</name>
+            <version>sha1:ebc558617ed696f52244b445e8ec25cd22ecf0b9</version>
+            <hashes>
+                <hash alg="SHA-1">ebc558617ed696f52244b445e8ec25cd22ecf0b9</hash>
+            </hashes>
+            <purl>pkg:terraform/cli_repo/checkov-example/main.tf/azurerm_storage_account.tfstate@sha1:ebc558617ed696f52244b445e8ec25cd22ecf0b9</purl>
+        </component>
+        <component type="application" bom-ref="pkg:terraform/cli_repo/checkov-example/main.tf/azurerm_storage_container.tfstate@sha1:ebc558617ed696f52244b445e8ec25cd22ecf0b9">
+            <name>azurerm_storage_container.tfstate</name>
+            <version>sha1:ebc558617ed696f52244b445e8ec25cd22ecf0b9</version>
+            <hashes>
+                <hash alg="SHA-1">ebc558617ed696f52244b445e8ec25cd22ecf0b9</hash>
+            </hashes>
+            <purl>pkg:terraform/cli_repo/checkov-example/main.tf/azurerm_storage_container.tfstate@sha1:ebc558617ed696f52244b445e8ec25cd22ecf0b9</purl>
+        </component>
+        <component type="application" bom-ref="pkg:terraform/cli_repo/checkov-example/main.tf/random_pet.rg_name@sha1:ebc558617ed696f52244b445e8ec25cd22ecf0b9">
+            <name>random_pet.rg_name</name>
+            <version>sha1:ebc558617ed696f52244b445e8ec25cd22ecf0b9</version>
+            <hashes>
+                <hash alg="SHA-1">ebc558617ed696f52244b445e8ec25cd22ecf0b9</hash>
+            </hashes>
+            <purl>pkg:terraform/cli_repo/checkov-example/main.tf/random_pet.rg_name@sha1:ebc558617ed696f52244b445e8ec25cd22ecf0b9</purl>
+        </component>
+        <component type="application" bom-ref="pkg:terraform/cli_repo/checkov-example/main.tf/random_string.resource_code@sha1:ebc558617ed696f52244b445e8ec25cd22ecf0b9">
+            <name>random_string.resource_code</name>
+            <version>sha1:ebc558617ed696f52244b445e8ec25cd22ecf0b9</version>
+            <hashes>
+                <hash alg="SHA-1">ebc558617ed696f52244b445e8ec25cd22ecf0b9</hash>
+            </hashes>
+            <purl>pkg:terraform/cli_repo/checkov-example/main.tf/random_string.resource_code@sha1:ebc558617ed696f52244b445e8ec25cd22ecf0b9</purl>
+        </component>
+    </components>
+    <dependencies>
+        <dependency ref="pkg:terraform/cli_repo/checkov-example/main.tf/azurerm_resource_group.rg@sha1:ebc558617ed696f52244b445e8ec25cd22ecf0b9" />
+        <dependency ref="pkg:terraform/cli_repo/checkov-example/main.tf/azurerm_storage_account.tfstate@sha1:ebc558617ed696f52244b445e8ec25cd22ecf0b9" />
+        <dependency ref="pkg:terraform/cli_repo/checkov-example/main.tf/azurerm_storage_container.tfstate@sha1:ebc558617ed696f52244b445e8ec25cd22ecf0b9" />
+        <dependency ref="pkg:terraform/cli_repo/checkov-example/main.tf/random_pet.rg_name@sha1:ebc558617ed696f52244b445e8ec25cd22ecf0b9" />
+        <dependency ref="pkg:terraform/cli_repo/checkov-example/main.tf/random_string.resource_code@sha1:ebc558617ed696f52244b445e8ec25cd22ecf0b9" />
+    </dependencies>
+    <vulnerabilities>
+        <vulnerability bom-ref="BomRef.8670772893687179.8882203811169543">
+            <id>CKV_AZURE_206</id>
+            <source>
+                <name>checkov</name>
+            </source>
+            <ratings>
+                <rating>
+                    <severity>unknown</severity>
+                </rating>
+            </ratings>
+            <description>Resource: azurerm_storage_account.tfstate. Ensure that Storage Accounts use replication</description>
+            <advisories>
+                <advisory>
+                    <url>https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-general-policies/azr-general-206</url>
+                </advisory>
+            </advisories>
+            <affects>
+                <target>
+                    <ref>pkg:terraform/cli_repo/checkov-example/main.tf/azurerm_storage_account.tfstate@sha1:ebc558617ed696f52244b445e8ec25cd22ecf0b9</ref>
+                </target>
+            </affects>
+        </vulnerability>
+        <vulnerability bom-ref="BomRef.10821938932017172.8633153900427668">
+            <id>CKV_AZURE_33</id>
+            <source>
+                <name>checkov</name>
+            </source>
+            <ratings>
+                <rating>
+                    <severity>unknown</severity>
+                </rating>
+            </ratings>
+            <description>Resource: azurerm_storage_account.tfstate. Ensure Storage logging is enabled for Queue service for read, write and delete requests</description>
+            <advisories>
+                <advisory>
+                    <url>https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-logging-policies/enable-requests-on-storage-logging-for-queue-service</url>
+                </advisory>
+            </advisories>
+            <affects>
+                <target>
+                    <ref>pkg:terraform/cli_repo/checkov-example/main.tf/azurerm_storage_account.tfstate@sha1:ebc558617ed696f52244b445e8ec25cd22ecf0b9</ref>
+                </target>
+            </affects>
+        </vulnerability>
+        <vulnerability bom-ref="BomRef.1302736614220953.9223503417723605">
+            <id>CKV_AZURE_34</id>
+            <source>
+                <name>checkov</name>
+            </source>
+            <ratings>
+                <rating>
+                    <severity>unknown</severity>
+                </rating>
+            </ratings>
+            <description>Resource: azurerm_storage_container.tfstate. Ensure that 'Public access level' is set to Private for blob containers</description>
+            <advisories>
+                <advisory>
+                    <url>https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-networking-policies/set-public-access-level-to-private-for-blob-containers</url>
+                </advisory>
+            </advisories>
+            <affects>
+                <target>
+                    <ref>pkg:terraform/cli_repo/checkov-example/main.tf/azurerm_storage_container.tfstate@sha1:ebc558617ed696f52244b445e8ec25cd22ecf0b9</ref>
+                </target>
+            </affects>
+        </vulnerability>
+        <vulnerability bom-ref="BomRef.22311394374481908.3644311132346266">
+            <id>CKV_AZURE_59</id>
+            <source>
+                <name>checkov</name>
+            </source>
+            <ratings>
+                <rating>
+                    <severity>unknown</severity>
+                </rating>
+            </ratings>
+            <description>Resource: azurerm_storage_account.tfstate. Ensure that Storage accounts disallow public access</description>
+            <advisories>
+                <advisory>
+                    <url>https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-networking-policies/ensure-that-storage-accounts-disallow-public-access</url>
+                </advisory>
+            </advisories>
+            <affects>
+                <target>
+                    <ref>pkg:terraform/cli_repo/checkov-example/main.tf/azurerm_storage_account.tfstate@sha1:ebc558617ed696f52244b445e8ec25cd22ecf0b9</ref>
+                </target>
+            </affects>
+        </vulnerability>
+    </vulnerabilities>
+</bom>
