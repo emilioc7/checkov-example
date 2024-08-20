@@ -61,3 +61,21 @@
       3. Doesn't include code blocks with error
       4. Very Few Details included
       5. **DOES NOT INCLUDE FAILURE TYPE OR SEVERITY**
+
+
+
+
+
+---
+
+## Steps to Implement Code Scanning Process with Checkov, SARIF, GitHub CLI and ITEMs tracking Platform.
+
+1 - Perform Checkov scan and output as SARIF format
+2 - Updload SARIF report using CodeQL GitHub Action so that Code Alerts are registered based on file name and resource (location within file can change and still the same Code Alert will be tracked). This step also assigns a unique "correlationGuid" to each Code Alert. 
+3 - Download the list of code Analisis results using GitHub CLI - Endpoint:  `gh api -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" /repos/emilioc7/checkov-example/code-scanning/analyses`
+4 - Select the latest "id" from the list of analisis results.
+5 - Retrieve the results in SARIF format using GitHub CLI - Endpoint: `gh api -H "Accept: application/sarif+json" -H "X-GitHub-Api-Version: 2022-11-28" /repos/emilioc7/checkov-example/code-scanning/analyses/269740563  > code_analysis_specific_repo_formatJSON_SARIF_269740563.json`
+6 - For each element in the result object, create a tracking Item in the corresponding tracking platform (ADO BOARD, ServiceNow)
+   - Avoid duplicates using the "correlationGuid"
+   - Avoid duplicates using the "ruleId"
+   - Reopen Item if they are reOpened in GitHub Code Analisys

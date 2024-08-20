@@ -1,0 +1,263 @@
+{
+    "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+    "version": "2.1.0",
+    "runs": [
+        {
+            "tool": {
+                "driver": {
+                    "name": "Checkov",
+                    "version": "3.2.230",
+                    "informationUri": "https://checkov.io",
+                    "rules": [
+                        {
+                            "id": "CKV_AZURE_33",
+                            "name": "Ensure Storage logging is enabled for Queue service for read, write and delete requests",
+                            "shortDescription": {
+                                "text": "Ensure Storage logging is enabled for Queue service for read, write and delete requests"
+                            },
+                            "fullDescription": {
+                                "text": "Ensure Storage logging is enabled for Queue service for read, write and delete requests"
+                            },
+                            "help": {
+                                "text": "Ensure Storage logging is enabled for Queue service for read, write and delete requests\nResource: azurerm_storage_account.tfstate"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "helpUri": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-logging-policies/enable-requests-on-storage-logging-for-queue-service"
+                        },
+                        {
+                            "id": "CKV_AZURE_59",
+                            "name": "Ensure that Storage accounts disallow public access",
+                            "shortDescription": {
+                                "text": "Ensure that Storage accounts disallow public access"
+                            },
+                            "fullDescription": {
+                                "text": "Ensure that Storage accounts disallow public access"
+                            },
+                            "help": {
+                                "text": "Ensure that Storage accounts disallow public access\nResource: azurerm_storage_account.tfstate"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "helpUri": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-networking-policies/ensure-that-storage-accounts-disallow-public-access"
+                        },
+                        {
+                            "id": "CKV_AZURE_44",
+                            "name": "Ensure Storage Account is using the latest version of TLS encryption",
+                            "shortDescription": {
+                                "text": "Ensure Storage Account is using the latest version of TLS encryption"
+                            },
+                            "fullDescription": {
+                                "text": "Ensure Storage Account is using the latest version of TLS encryption"
+                            },
+                            "help": {
+                                "text": "Ensure Storage Account is using the latest version of TLS encryption\nResource: azurerm_storage_account.tfstate"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "helpUri": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-storage-policies/bc-azr-storage-2"
+                        },
+                        {
+                            "id": "CKV_AZURE_190",
+                            "name": "Ensure that Storage blobs restrict public access",
+                            "shortDescription": {
+                                "text": "Ensure that Storage blobs restrict public access"
+                            },
+                            "fullDescription": {
+                                "text": "Ensure that Storage blobs restrict public access"
+                            },
+                            "help": {
+                                "text": "Ensure that Storage blobs restrict public access\nResource: azurerm_storage_account.tfstate"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "helpUri": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-networking-policies/azr-networking-190"
+                        }
+                    ],
+                    "organization": "bridgecrew"
+                }
+            },
+            "results": [
+                {
+                    "ruleId": "CKV_AZURE_33",
+                    "ruleIndex": 0,
+                    "level": "error",
+                    "attachments": [],
+                    "message": {
+                        "text": "Ensure Storage logging is enabled for Queue service for read, write and delete requests"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "main.tf"
+                                },
+                                "region": {
+                                    "startLine": 30,
+                                    "endLine": 41,
+                                    "snippet": {
+                                        "text": "resource \"azurerm_storage_account\" \"tfstate\" {\n  name                            = \"tfstate${random_string.resource_code.result}\"\n  resource_group_name             = azurerm_resource_group.rg.name\n  location                        = azurerm_resource_group.rg.location\n  account_tier                    = \"Standard\"\n  account_replication_type        = \"GRS\"\n\n  tags = {\n    environment = \"staging\"\n  }\n\n}\n"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "CKV_AZURE_59",
+                    "ruleIndex": 1,
+                    "level": "error",
+                    "attachments": [],
+                    "message": {
+                        "text": "Ensure that Storage accounts disallow public access"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "main.tf"
+                                },
+                                "region": {
+                                    "startLine": 30,
+                                    "endLine": 41,
+                                    "snippet": {
+                                        "text": "resource \"azurerm_storage_account\" \"tfstate\" {\n  name                            = \"tfstate${random_string.resource_code.result}\"\n  resource_group_name             = azurerm_resource_group.rg.name\n  location                        = azurerm_resource_group.rg.location\n  account_tier                    = \"Standard\"\n  account_replication_type        = \"GRS\"\n\n  tags = {\n    environment = \"staging\"\n  }\n\n}\n"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "CKV_AZURE_44",
+                    "ruleIndex": 2,
+                    "level": "error",
+                    "attachments": [],
+                    "message": {
+                        "text": "Ensure Storage Account is using the latest version of TLS encryption"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "main.tf"
+                                },
+                                "region": {
+                                    "startLine": 30,
+                                    "endLine": 41,
+                                    "snippet": {
+                                        "text": "resource \"azurerm_storage_account\" \"tfstate\" {\n  name                            = \"tfstate${random_string.resource_code.result}\"\n  resource_group_name             = azurerm_resource_group.rg.name\n  location                        = azurerm_resource_group.rg.location\n  account_tier                    = \"Standard\"\n  account_replication_type        = \"GRS\"\n\n  tags = {\n    environment = \"staging\"\n  }\n\n}\n"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "CKV_AZURE_190",
+                    "ruleIndex": 3,
+                    "level": "error",
+                    "attachments": [],
+                    "message": {
+                        "text": "Ensure that Storage blobs restrict public access"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "main.tf"
+                                },
+                                "region": {
+                                    "startLine": 30,
+                                    "endLine": 41,
+                                    "snippet": {
+                                        "text": "resource \"azurerm_storage_account\" \"tfstate\" {\n  name                            = \"tfstate${random_string.resource_code.result}\"\n  resource_group_name             = azurerm_resource_group.rg.name\n  location                        = azurerm_resource_group.rg.location\n  account_tier                    = \"Standard\"\n  account_replication_type        = \"GRS\"\n\n  tags = {\n    environment = \"staging\"\n  }\n\n}\n"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "CKV_AZURE_59",
+                    "ruleIndex": 1,
+                    "level": "error",
+                    "attachments": [],
+                    "message": {
+                        "text": "Ensure that Storage accounts disallow public access"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "main.tf"
+                                },
+                                "region": {
+                                    "startLine": 68,
+                                    "endLine": 110,
+                                    "snippet": {
+                                        "text": "resource \"azurerm_storage_account\" \"new_storage_emc\" {\n  name                            = \"newstorage{random_string.resource_code.result}\"\n  resource_group_name             = azurerm_resource_group.rg.name\n  location                        = azurerm_resource_group.rg.location\n  account_tier                    = \"Standard\"\n  account_replication_type        = \"GRS\"\n\n  tags = {\n    environment = \"testing\"\n  }\n  queue_properties {\n    logging {\n      delete                = true\n      read                  = true\n      write                 = true\n      version               = \"1.0\"\n      retention_policy_days = 10\n    }\n    hour_metrics {\n      enabled               = true\n      include_apis          = true\n      version               = \"1.0\"\n      retention_policy_days = 10\n    }\n    minute_metrics {\n      enabled               = true\n      include_apis          = true\n      version               = \"1.0\"\n      retention_policy_days = 10\n    }\n  }\n  sas_policy {\n    expiration_period = \"90.00:00:00\"\n    expiration_action = \"Log\"\n  }\n\n  blob_properties {\n    delete_retention_policy {\n      days = 7\n    }\n  }\n\n}\n"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "CKV_AZURE_44",
+                    "ruleIndex": 2,
+                    "level": "error",
+                    "attachments": [],
+                    "message": {
+                        "text": "Ensure Storage Account is using the latest version of TLS encryption"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "main.tf"
+                                },
+                                "region": {
+                                    "startLine": 68,
+                                    "endLine": 110,
+                                    "snippet": {
+                                        "text": "resource \"azurerm_storage_account\" \"new_storage_emc\" {\n  name                            = \"newstorage{random_string.resource_code.result}\"\n  resource_group_name             = azurerm_resource_group.rg.name\n  location                        = azurerm_resource_group.rg.location\n  account_tier                    = \"Standard\"\n  account_replication_type        = \"GRS\"\n\n  tags = {\n    environment = \"testing\"\n  }\n  queue_properties {\n    logging {\n      delete                = true\n      read                  = true\n      write                 = true\n      version               = \"1.0\"\n      retention_policy_days = 10\n    }\n    hour_metrics {\n      enabled               = true\n      include_apis          = true\n      version               = \"1.0\"\n      retention_policy_days = 10\n    }\n    minute_metrics {\n      enabled               = true\n      include_apis          = true\n      version               = \"1.0\"\n      retention_policy_days = 10\n    }\n  }\n  sas_policy {\n    expiration_period = \"90.00:00:00\"\n    expiration_action = \"Log\"\n  }\n\n  blob_properties {\n    delete_retention_policy {\n      days = 7\n    }\n  }\n\n}\n"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "CKV_AZURE_190",
+                    "ruleIndex": 3,
+                    "level": "error",
+                    "attachments": [],
+                    "message": {
+                        "text": "Ensure that Storage blobs restrict public access"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "main.tf"
+                                },
+                                "region": {
+                                    "startLine": 68,
+                                    "endLine": 110,
+                                    "snippet": {
+                                        "text": "resource \"azurerm_storage_account\" \"new_storage_emc\" {\n  name                            = \"newstorage{random_string.resource_code.result}\"\n  resource_group_name             = azurerm_resource_group.rg.name\n  location                        = azurerm_resource_group.rg.location\n  account_tier                    = \"Standard\"\n  account_replication_type        = \"GRS\"\n\n  tags = {\n    environment = \"testing\"\n  }\n  queue_properties {\n    logging {\n      delete                = true\n      read                  = true\n      write                 = true\n      version               = \"1.0\"\n      retention_policy_days = 10\n    }\n    hour_metrics {\n      enabled               = true\n      include_apis          = true\n      version               = \"1.0\"\n      retention_policy_days = 10\n    }\n    minute_metrics {\n      enabled               = true\n      include_apis          = true\n      version               = \"1.0\"\n      retention_policy_days = 10\n    }\n  }\n  sas_policy {\n    expiration_period = \"90.00:00:00\"\n    expiration_action = \"Log\"\n  }\n\n  blob_properties {\n    delete_retention_policy {\n      days = 7\n    }\n  }\n\n}\n"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

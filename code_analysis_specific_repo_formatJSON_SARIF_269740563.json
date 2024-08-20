@@ -1,0 +1,811 @@
+{
+    "runs": [
+        {
+            "artifacts": [
+                {
+                    "location": {
+                        "index": 0,
+                        "uri": "main.tf"
+                    }
+                }
+            ],
+            "automationDetails": {
+                "id": "checkov-analysis-results/"
+            },
+            "conversion": {
+                "tool": {
+                    "driver": {
+                        "name": "GitHub Code Scanning"
+                    }
+                }
+            },
+            "results": [
+                {
+                    "correlationGuid": "950c465f-4a98-4f09-bb8a-3ed862b956f0",
+                    "level": "error",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "index": 0,
+                                    "uri": "main.tf"
+                                },
+                                "region": {
+                                    "endLine": 41,
+                                    "startColumn": 1,
+                                    "startLine": 30
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Ensure Storage Account is using the latest version of TLS encryption"
+                    },
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "fe5ad1ea9cff5ece:1"
+                    },
+                    "properties": {
+                        "github/alertNumber": 19,
+                        "github/alertUrl": "https://api.github.com/repos/emilioc7/checkov-example/code-scanning/alerts/19"
+                    },
+                    "rule": {
+                        "id": "CKV_AZURE_44",
+                        "index": 8
+                    },
+                    "ruleId": "CKV_AZURE_44"
+                },
+                {
+                    "correlationGuid": "c7bda4a0-51c5-4c17-b7dc-19af07e4b73a",
+                    "level": "error",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "index": 0,
+                                    "uri": "main.tf"
+                                },
+                                "region": {
+                                    "endLine": 41,
+                                    "startColumn": 1,
+                                    "startLine": 30
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Ensure that Storage accounts disallow public access"
+                    },
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "fe5ad1ea9cff5ece:1"
+                    },
+                    "properties": {
+                        "github/alertNumber": 1,
+                        "github/alertUrl": "https://api.github.com/repos/emilioc7/checkov-example/code-scanning/alerts/1"
+                    },
+                    "rule": {
+                        "id": "CKV_AZURE_59",
+                        "index": 9
+                    },
+                    "ruleId": "CKV_AZURE_59"
+                },
+                {
+                    "correlationGuid": "5c076879-5042-44b3-b937-a90592bc607b",
+                    "level": "error",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "index": 0,
+                                    "uri": "main.tf"
+                                },
+                                "region": {
+                                    "endLine": 41,
+                                    "startColumn": 1,
+                                    "startLine": 30
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Ensure that Storage blobs restrict public access"
+                    },
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "fe5ad1ea9cff5ece:1"
+                    },
+                    "properties": {
+                        "github/alertNumber": 3,
+                        "github/alertUrl": "https://api.github.com/repos/emilioc7/checkov-example/code-scanning/alerts/3"
+                    },
+                    "rule": {
+                        "id": "CKV_AZURE_190",
+                        "index": 6
+                    },
+                    "ruleId": "CKV_AZURE_190"
+                },
+                {
+                    "correlationGuid": "5d96137f-ce12-48c6-aef3-80f99e2f8c07",
+                    "level": "error",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "index": 0,
+                                    "uri": "main.tf"
+                                },
+                                "region": {
+                                    "endLine": 41,
+                                    "startColumn": 1,
+                                    "startLine": 30
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Ensure Storage logging is enabled for Queue service for read, write and delete requests"
+                    },
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "fe5ad1ea9cff5ece:1"
+                    },
+                    "properties": {
+                        "github/alertNumber": 4,
+                        "github/alertUrl": "https://api.github.com/repos/emilioc7/checkov-example/code-scanning/alerts/4"
+                    },
+                    "rule": {
+                        "id": "CKV_AZURE_33",
+                        "index": 7
+                    },
+                    "ruleId": "CKV_AZURE_33"
+                },
+                {
+                    "correlationGuid": "aa5cd056-acf1-429c-9467-a9aa9678cd02",
+                    "level": "error",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "index": 0,
+                                    "uri": "main.tf"
+                                },
+                                "region": {
+                                    "endLine": 110,
+                                    "startColumn": 1,
+                                    "startLine": 68
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Ensure Storage Account is using the latest version of TLS encryption"
+                    },
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "41df9005b03543ea:1"
+                    },
+                    "properties": {
+                        "github/alertNumber": 20,
+                        "github/alertUrl": "https://api.github.com/repos/emilioc7/checkov-example/code-scanning/alerts/20"
+                    },
+                    "rule": {
+                        "id": "CKV_AZURE_44",
+                        "index": 8
+                    },
+                    "ruleId": "CKV_AZURE_44"
+                },
+                {
+                    "correlationGuid": "7014c62c-e1d4-4adc-91db-f1dd7714604c",
+                    "level": "error",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "index": 0,
+                                    "uri": "main.tf"
+                                },
+                                "region": {
+                                    "endLine": 110,
+                                    "startColumn": 1,
+                                    "startLine": 68
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Ensure that Storage accounts disallow public access"
+                    },
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "41df9005b03543ea:1"
+                    },
+                    "properties": {
+                        "github/alertNumber": 21,
+                        "github/alertUrl": "https://api.github.com/repos/emilioc7/checkov-example/code-scanning/alerts/21"
+                    },
+                    "rule": {
+                        "id": "CKV_AZURE_59",
+                        "index": 9
+                    },
+                    "ruleId": "CKV_AZURE_59"
+                },
+                {
+                    "correlationGuid": "c3feb5f7-1274-499a-9bc8-7ad9564c73e8",
+                    "level": "error",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "index": 0,
+                                    "uri": "main.tf"
+                                },
+                                "region": {
+                                    "endLine": 110,
+                                    "startColumn": 1,
+                                    "startLine": 68
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Ensure that Storage blobs restrict public access"
+                    },
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "41df9005b03543ea:1"
+                    },
+                    "properties": {
+                        "github/alertNumber": 22,
+                        "github/alertUrl": "https://api.github.com/repos/emilioc7/checkov-example/code-scanning/alerts/22"
+                    },
+                    "rule": {
+                        "id": "CKV_AZURE_190",
+                        "index": 6
+                    },
+                    "ruleId": "CKV_AZURE_190"
+                },
+                {
+                    "correlationGuid": "1ec9066e-d0a1-465d-b67e-ddc2e7aa9610",
+                    "level": "error",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "index": 0,
+                                    "uri": "main.tf"
+                                },
+                                "region": {
+                                    "endLine": 41,
+                                    "startColumn": 1,
+                                    "startLine": 30
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Ensure soft-delete is enabled on Azure storage account"
+                    },
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "fe5ad1ea9cff5ece:1"
+                    },
+                    "properties": {
+                        "github/alertNumber": 6,
+                        "github/alertUrl": "https://api.github.com/repos/emilioc7/checkov-example/code-scanning/alerts/6"
+                    },
+                    "rule": {
+                        "id": "CKV2_AZURE_38",
+                        "index": 2
+                    },
+                    "ruleId": "CKV2_AZURE_38"
+                },
+                {
+                    "correlationGuid": "08525af1-8831-4797-a062-a1c0c014076e",
+                    "level": "error",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "index": 0,
+                                    "uri": "main.tf"
+                                },
+                                "region": {
+                                    "endLine": 41,
+                                    "startColumn": 1,
+                                    "startLine": 30
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Ensure storage account is configured with private endpoint"
+                    },
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "fe5ad1ea9cff5ece:1"
+                    },
+                    "properties": {
+                        "github/alertNumber": 7,
+                        "github/alertUrl": "https://api.github.com/repos/emilioc7/checkov-example/code-scanning/alerts/7"
+                    },
+                    "rule": {
+                        "id": "CKV2_AZURE_33",
+                        "index": 1
+                    },
+                    "ruleId": "CKV2_AZURE_33"
+                },
+                {
+                    "correlationGuid": "198993f1-0025-47f3-8b5d-da761725aad0",
+                    "level": "error",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "index": 0,
+                                    "uri": "main.tf"
+                                },
+                                "region": {
+                                    "endLine": 41,
+                                    "startColumn": 1,
+                                    "startLine": 30
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Ensure storage account is configured with SAS expiration policy"
+                    },
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "fe5ad1ea9cff5ece:1"
+                    },
+                    "properties": {
+                        "github/alertNumber": 8,
+                        "github/alertUrl": "https://api.github.com/repos/emilioc7/checkov-example/code-scanning/alerts/8"
+                    },
+                    "rule": {
+                        "id": "CKV2_AZURE_41",
+                        "index": 4
+                    },
+                    "ruleId": "CKV2_AZURE_41"
+                },
+                {
+                    "correlationGuid": "067e9e22-4ba6-44f8-abf1-d8cb7f126d43",
+                    "level": "error",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "index": 0,
+                                    "uri": "main.tf"
+                                },
+                                "region": {
+                                    "endLine": 110,
+                                    "startColumn": 1,
+                                    "startLine": 68
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Ensure storage account is configured with SAS expiration policy"
+                    },
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "41df9005b03543ea:1"
+                    },
+                    "properties": {
+                        "github/alertNumber": 23,
+                        "github/alertUrl": "https://api.github.com/repos/emilioc7/checkov-example/code-scanning/alerts/23"
+                    },
+                    "rule": {
+                        "id": "CKV2_AZURE_41",
+                        "index": 4
+                    },
+                    "ruleId": "CKV2_AZURE_41"
+                },
+                {
+                    "correlationGuid": "6fd71adb-ee24-45e5-9267-6e9918699c51",
+                    "level": "error",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "index": 0,
+                                    "uri": "main.tf"
+                                },
+                                "region": {
+                                    "endLine": 41,
+                                    "startColumn": 1,
+                                    "startLine": 30
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Ensure storage account is configured without blob anonymous access"
+                    },
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "fe5ad1ea9cff5ece:1"
+                    },
+                    "properties": {
+                        "github/alertNumber": 9,
+                        "github/alertUrl": "https://api.github.com/repos/emilioc7/checkov-example/code-scanning/alerts/9"
+                    },
+                    "rule": {
+                        "id": "CKV2_AZURE_47",
+                        "index": 5
+                    },
+                    "ruleId": "CKV2_AZURE_47"
+                },
+                {
+                    "correlationGuid": "8059d08f-2f55-48c7-a347-fdef65fa5b13",
+                    "level": "error",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "index": 0,
+                                    "uri": "main.tf"
+                                },
+                                "region": {
+                                    "endLine": 110,
+                                    "startColumn": 1,
+                                    "startLine": 68
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Ensure storage account is configured without blob anonymous access"
+                    },
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "41df9005b03543ea:1"
+                    },
+                    "properties": {
+                        "github/alertNumber": 24,
+                        "github/alertUrl": "https://api.github.com/repos/emilioc7/checkov-example/code-scanning/alerts/24"
+                    },
+                    "rule": {
+                        "id": "CKV2_AZURE_47",
+                        "index": 5
+                    },
+                    "ruleId": "CKV2_AZURE_47"
+                },
+                {
+                    "correlationGuid": "1d64dd91-30ff-4134-8419-c1e5115368f8",
+                    "level": "error",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "index": 0,
+                                    "uri": "main.tf"
+                                },
+                                "region": {
+                                    "endLine": 41,
+                                    "startColumn": 1,
+                                    "startLine": 30
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Ensure storage account is not configured with Shared Key authorization"
+                    },
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "fe5ad1ea9cff5ece:1"
+                    },
+                    "properties": {
+                        "github/alertNumber": 10,
+                        "github/alertUrl": "https://api.github.com/repos/emilioc7/checkov-example/code-scanning/alerts/10"
+                    },
+                    "rule": {
+                        "id": "CKV2_AZURE_40",
+                        "index": 3
+                    },
+                    "ruleId": "CKV2_AZURE_40"
+                },
+                {
+                    "correlationGuid": "dfe7efc7-fbe3-4f9f-bd5d-e3994d14378a",
+                    "level": "error",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "index": 0,
+                                    "uri": "main.tf"
+                                },
+                                "region": {
+                                    "endLine": 110,
+                                    "startColumn": 1,
+                                    "startLine": 68
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Ensure storage account is not configured with Shared Key authorization"
+                    },
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "41df9005b03543ea:1"
+                    },
+                    "properties": {
+                        "github/alertNumber": 25,
+                        "github/alertUrl": "https://api.github.com/repos/emilioc7/checkov-example/code-scanning/alerts/25"
+                    },
+                    "rule": {
+                        "id": "CKV2_AZURE_40",
+                        "index": 3
+                    },
+                    "ruleId": "CKV2_AZURE_40"
+                },
+                {
+                    "correlationGuid": "aff17797-b124-4f17-8109-b652b89618fe",
+                    "level": "error",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "index": 0,
+                                    "uri": "main.tf"
+                                },
+                                "region": {
+                                    "endLine": 41,
+                                    "startColumn": 1,
+                                    "startLine": 30
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Ensure storage for critical data are encrypted with Customer Managed Key"
+                    },
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "fe5ad1ea9cff5ece:1"
+                    },
+                    "properties": {
+                        "github/alertNumber": 12,
+                        "github/alertUrl": "https://api.github.com/repos/emilioc7/checkov-example/code-scanning/alerts/12"
+                    },
+                    "rule": {
+                        "id": "CKV2_AZURE_1",
+                        "index": 0
+                    },
+                    "ruleId": "CKV2_AZURE_1"
+                },
+                {
+                    "correlationGuid": "5f1deb6c-334c-4242-9c2e-020063eab7ed",
+                    "level": "error",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "index": 0,
+                                    "uri": "main.tf"
+                                },
+                                "region": {
+                                    "endLine": 110,
+                                    "startColumn": 1,
+                                    "startLine": 68
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Ensure storage for critical data are encrypted with Customer Managed Key"
+                    },
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "41df9005b03543ea:1"
+                    },
+                    "properties": {
+                        "github/alertNumber": 15,
+                        "github/alertUrl": "https://api.github.com/repos/emilioc7/checkov-example/code-scanning/alerts/15"
+                    },
+                    "rule": {
+                        "id": "CKV2_AZURE_1",
+                        "index": 0
+                    },
+                    "ruleId": "CKV2_AZURE_1"
+                }
+            ],
+            "tool": {
+                "driver": {
+                    "name": "checkov",
+                    "rules": [
+                        {
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "fullDescription": {
+                                "text": "Ensure storage for critical data are encrypted with Customer Managed Key"
+                            },
+                            "help": {
+                                "markdown": "Ensure storage for critical data are encrypted with Customer Managed Key\nResource: azurerm_storage_account.tfstate",
+                                "text": "Ensure storage for critical data are encrypted with Customer Managed Key\nResource: azurerm_storage_account.tfstate"
+                            },
+                            "helpUri": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-general-policies/ensure-storage-for-critical-data-are-encrypted-with-customer-managed-key",
+                            "id": "CKV2_AZURE_1",
+                            "name": "Ensure storage for critical data are encrypted with Customer Managed Key",
+                            "properties": {},
+                            "shortDescription": {
+                                "text": "Ensure storage for critical data are encrypted with Customer Managed Key"
+                            }
+                        },
+                        {
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "fullDescription": {
+                                "text": "Ensure storage account is configured with private endpoint"
+                            },
+                            "help": {
+                                "markdown": "Ensure storage account is configured with private endpoint\nResource: azurerm_storage_account.tfstate",
+                                "text": "Ensure storage account is configured with private endpoint\nResource: azurerm_storage_account.tfstate"
+                            },
+                            "helpUri": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-general-policies/bc-azure-2-33",
+                            "id": "CKV2_AZURE_33",
+                            "name": "Ensure storage account is configured with private endpoint",
+                            "properties": {},
+                            "shortDescription": {
+                                "text": "Ensure storage account is configured with private endpoint"
+                            }
+                        },
+                        {
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "fullDescription": {
+                                "text": "Ensure soft-delete is enabled on Azure storage account"
+                            },
+                            "help": {
+                                "markdown": "Ensure soft-delete is enabled on Azure storage account\nResource: azurerm_storage_account.tfstate",
+                                "text": "Ensure soft-delete is enabled on Azure storage account\nResource: azurerm_storage_account.tfstate"
+                            },
+                            "helpUri": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-general-policies/bc-azure-2-38",
+                            "id": "CKV2_AZURE_38",
+                            "name": "Ensure soft-delete is enabled on Azure storage account",
+                            "properties": {},
+                            "shortDescription": {
+                                "text": "Ensure soft-delete is enabled on Azure storage account"
+                            }
+                        },
+                        {
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "fullDescription": {
+                                "text": "Ensure storage account is not configured with Shared Key authorization"
+                            },
+                            "help": {
+                                "markdown": "Ensure storage account is not configured with Shared Key authorization\nResource: azurerm_storage_account.tfstate",
+                                "text": "Ensure storage account is not configured with Shared Key authorization\nResource: azurerm_storage_account.tfstate"
+                            },
+                            "helpUri": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-iam-policies/bc-azure-2-40",
+                            "id": "CKV2_AZURE_40",
+                            "name": "Ensure storage account is not configured with Shared Key authorization",
+                            "properties": {},
+                            "shortDescription": {
+                                "text": "Ensure storage account is not configured with Shared Key authorization"
+                            }
+                        },
+                        {
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "fullDescription": {
+                                "text": "Ensure storage account is configured with SAS expiration policy"
+                            },
+                            "help": {
+                                "markdown": "Ensure storage account is configured with SAS expiration policy\nResource: azurerm_storage_account.tfstate",
+                                "text": "Ensure storage account is configured with SAS expiration policy\nResource: azurerm_storage_account.tfstate"
+                            },
+                            "helpUri": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-iam-policies/bc-azure-2-41",
+                            "id": "CKV2_AZURE_41",
+                            "name": "Ensure storage account is configured with SAS expiration policy",
+                            "properties": {},
+                            "shortDescription": {
+                                "text": "Ensure storage account is configured with SAS expiration policy"
+                            }
+                        },
+                        {
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "fullDescription": {
+                                "text": "Ensure storage account is configured without blob anonymous access"
+                            },
+                            "help": {
+                                "markdown": "Ensure storage account is configured without blob anonymous access\nResource: azurerm_storage_account.tfstate",
+                                "text": "Ensure storage account is configured without blob anonymous access\nResource: azurerm_storage_account.tfstate"
+                            },
+                            "helpUri": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-iam-policies/bc-azure-2-47",
+                            "id": "CKV2_AZURE_47",
+                            "name": "Ensure storage account is configured without blob anonymous access",
+                            "properties": {},
+                            "shortDescription": {
+                                "text": "Ensure storage account is configured without blob anonymous access"
+                            }
+                        },
+                        {
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "fullDescription": {
+                                "text": "Ensure that Storage blobs restrict public access"
+                            },
+                            "help": {
+                                "markdown": "Ensure that Storage blobs restrict public access\nResource: azurerm_storage_account.tfstate",
+                                "text": "Ensure that Storage blobs restrict public access\nResource: azurerm_storage_account.tfstate"
+                            },
+                            "helpUri": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-networking-policies/azr-networking-190",
+                            "id": "CKV_AZURE_190",
+                            "name": "Ensure that Storage blobs restrict public access",
+                            "properties": {},
+                            "shortDescription": {
+                                "text": "Ensure that Storage blobs restrict public access"
+                            }
+                        },
+                        {
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "fullDescription": {
+                                "text": "Ensure Storage logging is enabled for Queue service for read, write and delete requests"
+                            },
+                            "help": {
+                                "markdown": "Ensure Storage logging is enabled for Queue service for read, write and delete requests\nResource: azurerm_storage_account.tfstate",
+                                "text": "Ensure Storage logging is enabled for Queue service for read, write and delete requests\nResource: azurerm_storage_account.tfstate"
+                            },
+                            "helpUri": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-logging-policies/enable-requests-on-storage-logging-for-queue-service",
+                            "id": "CKV_AZURE_33",
+                            "name": "Ensure Storage logging is enabled for Queue service for read, write and delete requests",
+                            "properties": {},
+                            "shortDescription": {
+                                "text": "Ensure Storage logging is enabled for Queue service for read, write and delete requests"
+                            }
+                        },
+                        {
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "fullDescription": {
+                                "text": "Ensure Storage Account is using the latest version of TLS encryption"
+                            },
+                            "help": {
+                                "markdown": "Ensure Storage Account is using the latest version of TLS encryption\nResource: azurerm_storage_account.tfstate",
+                                "text": "Ensure Storage Account is using the latest version of TLS encryption\nResource: azurerm_storage_account.tfstate"
+                            },
+                            "helpUri": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-storage-policies/bc-azr-storage-2",
+                            "id": "CKV_AZURE_44",
+                            "name": "Ensure Storage Account is using the latest version of TLS encryption",
+                            "properties": {},
+                            "shortDescription": {
+                                "text": "Ensure Storage Account is using the latest version of TLS encryption"
+                            }
+                        },
+                        {
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "fullDescription": {
+                                "text": "Ensure that Storage accounts disallow public access"
+                            },
+                            "help": {
+                                "markdown": "Ensure that Storage accounts disallow public access\nResource: azurerm_storage_account.tfstate",
+                                "text": "Ensure that Storage accounts disallow public access\nResource: azurerm_storage_account.tfstate"
+                            },
+                            "helpUri": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-networking-policies/ensure-that-storage-accounts-disallow-public-access",
+                            "id": "CKV_AZURE_59",
+                            "name": "Ensure that Storage accounts disallow public access",
+                            "properties": {},
+                            "shortDescription": {
+                                "text": "Ensure that Storage accounts disallow public access"
+                            }
+                        }
+                    ],
+                    "version": "3.2.230"
+                }
+            },
+            "versionControlProvenance": [
+                {
+                    "branch": "refs/heads/main",
+                    "repositoryUri": "https://github.com/emilioc7/checkov-example",
+                    "revisionId": "de9a04934bb4d033c500dd04041e5291c36d896b"
+                }
+            ]
+        }
+    ],
+    "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+    "version": "2.1.0"
+}
