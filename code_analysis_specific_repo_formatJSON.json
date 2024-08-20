@@ -1,0 +1,21 @@
+{
+    "ref": "refs/heads/main",
+    "commit_sha": "1adfaa91e0fc8256b6e6e4dabcb74c0cf437e7cc",
+    "analysis_key": ".github/workflows/main-workflow.yml:scan",
+    "environment": "{}",
+    "category": "checkov-analysis-results",
+    "error": "",
+    "created_at": "2024-08-20T00:44:35Z",
+    "results_count": 2,
+    "rules_count": 1,
+    "id": 269267712,
+    "url": "https://api.github.com/repos/emilioc7/checkov-example/code-scanning/analyses/269267712",
+    "sarif_id": "5f2cade4-5e8d-11ef-98a4-0296bf30abbc",
+    "tool": {
+        "name": "checkov",
+        "guid": null,
+        "version": "3.2.230"
+    },
+    "deletable": true,
+    "warning": ""
+}

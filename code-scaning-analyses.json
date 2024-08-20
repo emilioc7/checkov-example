@@ -1,0 +1,338 @@
+[
+    {
+        "ref": "refs/heads/main",
+        "commit_sha": "1adfaa91e0fc8256b6e6e4dabcb74c0cf437e7cc",
+        "analysis_key": ".github/workflows/main-workflow.yml:scan",
+        "environment": "{}",
+        "category": "checkov-analysis-results",
+        "error": "",
+        "created_at": "2024-08-20T00:44:35Z",
+        "results_count": 2,
+        "rules_count": 1,
+        "id": 269267712,
+        "url": "https://api.github.com/repos/emilioc7/checkov-example/code-scanning/analyses/269267712",
+        "sarif_id": "5f2cade4-5e8d-11ef-98a4-0296bf30abbc",
+        "tool": {
+            "name": "checkov",
+            "guid": null,
+            "version": "3.2.230"
+        },
+        "deletable": true,
+        "warning": ""
+    },
+    {
+        "ref": "refs/heads/main",
+        "commit_sha": "d521f05e67b9761b56ede141f29bec6c520d9337",
+        "analysis_key": ".github/workflows/main-workflow.yml:scan",
+        "environment": "{}",
+        "category": "checkov-analysis-results",
+        "error": "",
+        "created_at": "2024-08-20T00:41:44Z",
+        "results_count": 3,
+        "rules_count": 2,
+        "id": 269266709,
+        "url": "https://api.github.com/repos/emilioc7/checkov-example/code-scanning/analyses/269266709",
+        "sarif_id": "f934574e-5e8c-11ef-9def-659536d628bd",
+        "tool": {
+            "name": "checkov",
+            "guid": null,
+            "version": "3.2.230"
+        },
+        "deletable": false,
+        "warning": ""
+    },
+    {
+        "ref": "refs/heads/main",
+        "commit_sha": "a47c858fd34ff558f677cac05236d80f9509ed80",
+        "analysis_key": ".github/workflows/main-workflow.yml:scan",
+        "environment": "{}",
+        "category": "checkov-analysis-results",
+        "error": "",
+        "created_at": "2024-08-20T00:36:18Z",
+        "results_count": 3,
+        "rules_count": 2,
+        "id": 269264922,
+        "url": "https://api.github.com/repos/emilioc7/checkov-example/code-scanning/analyses/269264922",
+        "sarif_id": "36db65f2-5e8c-11ef-86d4-d442883d352e",
+        "tool": {
+            "name": "checkov",
+            "guid": null,
+            "version": "3.2.230"
+        },
+        "deletable": false,
+        "warning": ""
+    },
+    {
+        "ref": "refs/heads/main",
+        "commit_sha": "a47c858fd34ff558f677cac05236d80f9509ed80",
+        "analysis_key": ".github/workflows/main-workflow.yml:scan",
+        "environment": "{}",
+        "category": "checkov-analysis-results",
+        "error": "",
+        "created_at": "2024-08-20T00:30:39Z",
+        "results_count": 3,
+        "rules_count": 2,
+        "id": 269262803,
+        "url": "https://api.github.com/repos/emilioc7/checkov-example/code-scanning/analyses/269262803",
+        "sarif_id": "6d253dfa-5e8b-11ef-8031-57fa69c773f7",
+        "tool": {
+            "name": "checkov",
+            "guid": null,
+            "version": "3.2.230"
+        },
+        "deletable": false,
+        "warning": ""
+    },
+    {
+        "ref": "refs/heads/main",
+        "commit_sha": "a47c858fd34ff558f677cac05236d80f9509ed80",
+        "analysis_key": ".github/workflows/main-workflow.yml:scan",
+        "environment": "{}",
+        "category": "checkov-analysis-results",
+        "error": "",
+        "created_at": "2024-08-20T00:23:02Z",
+        "results_count": 3,
+        "rules_count": 2,
+        "id": 269258905,
+        "url": "https://api.github.com/repos/emilioc7/checkov-example/code-scanning/analyses/269258905",
+        "sarif_id": "5c5f7e78-5e8a-11ef-81b1-7e184e6ca1b4",
+        "tool": {
+            "name": "checkov",
+            "guid": null,
+            "version": "3.2.230"
+        },
+        "deletable": false,
+        "warning": ""
+    },
+    {
+        "ref": "refs/heads/main",
+        "commit_sha": "09f155d05d24b3bf5693e6027a60784c2e94fa14",
+        "analysis_key": ".github/workflows/main-workflow.yml:scan",
+        "environment": "{}",
+        "category": "checkov-analysis-results",
+        "error": "",
+        "created_at": "2024-08-20T00:17:27Z",
+        "results_count": 1,
+        "rules_count": 1,
+        "id": 269255595,
+        "url": "https://api.github.com/repos/emilioc7/checkov-example/code-scanning/analyses/269255595",
+        "sarif_id": "953257a8-5e89-11ef-8f1d-38017689bc1d",
+        "tool": {
+            "name": "checkov",
+            "guid": null,
+            "version": "3.2.230"
+        },
+        "deletable": false,
+        "warning": ""
+    },
+    {
+        "ref": "refs/heads/main",
+        "commit_sha": "09f155d05d24b3bf5693e6027a60784c2e94fa14",
+        "analysis_key": ".github/workflows/main-workflow.yml:scan",
+        "environment": "{}",
+        "category": "checkov-analysis-results",
+        "error": "",
+        "created_at": "2024-08-20T00:09:51Z",
+        "results_count": 1,
+        "rules_count": 1,
+        "id": 269251167,
+        "url": "https://api.github.com/repos/emilioc7/checkov-example/code-scanning/analyses/269251167",
+        "sarif_id": "851887f8-5e88-11ef-82b0-879cfeff761c",
+        "tool": {
+            "name": "checkov",
+            "guid": null,
+            "version": "3.2.230"
+        },
+        "deletable": false,
+        "warning": ""
+    },
+    {
+        "ref": "refs/heads/main",
+        "commit_sha": "bca1c3d95940be1af8216c3f483354a0ca5d4f8c",
+        "analysis_key": ".github/workflows/main-workflow.yml:scan",
+        "environment": "{}",
+        "category": "checkov-analysis-results",
+        "error": "",
+        "created_at": "2024-08-19T23:53:14Z",
+        "results_count": 1,
+        "rules_count": 1,
+        "id": 269244308,
+        "url": "https://api.github.com/repos/emilioc7/checkov-example/code-scanning/analyses/269244308",
+        "sarif_id": "33225bec-5e86-11ef-8b21-2f0bba3abdef",
+        "tool": {
+            "name": "checkov",
+            "guid": null,
+            "version": "3.2.230"
+        },
+        "deletable": false,
+        "warning": ""
+    },
+    {
+        "ref": "refs/heads/main",
+        "commit_sha": "9b6067f5ccb7e18458a88c60f002dd96ed485161",
+        "analysis_key": ".github/workflows/main-workflow.yml:scan",
+        "environment": "{}",
+        "category": "checkov-analysis-results",
+        "error": "",
+        "created_at": "2024-08-19T23:36:38Z",
+        "results_count": 1,
+        "rules_count": 1,
+        "id": 269237908,
+        "url": "https://api.github.com/repos/emilioc7/checkov-example/code-scanning/analyses/269237908",
+        "sarif_id": "e17e30f6-5e83-11ef-8e2a-28ef1f4e0680",
+        "tool": {
+            "name": "checkov",
+            "guid": null,
+            "version": "3.2.230"
+        },
+        "deletable": false,
+        "warning": ""
+    },
+    {
+        "ref": "refs/heads/main",
+        "commit_sha": "fbc70872db6657a99459b1c674960afa88654f45",
+        "analysis_key": ".github/workflows/main-workflow.yml:scan",
+        "environment": "{}",
+        "category": "checkov-analysis-results",
+        "error": "",
+        "created_at": "2024-08-19T23:26:14Z",
+        "results_count": 1,
+        "rules_count": 1,
+        "id": 269233475,
+        "url": "https://api.github.com/repos/emilioc7/checkov-example/code-scanning/analyses/269233475",
+        "sarif_id": "6d95940a-5e82-11ef-8765-161811d8f016",
+        "tool": {
+            "name": "checkov",
+            "guid": null,
+            "version": "3.2.220"
+        },
+        "deletable": false,
+        "warning": ""
+    },
+    {
+        "ref": "refs/heads/main",
+        "commit_sha": "fbc70872db6657a99459b1c674960afa88654f45",
+        "analysis_key": ".github/workflows/main-workflow.yml:scan",
+        "environment": "{}",
+        "category": "checkov-analysis-results",
+        "error": "",
+        "created_at": "2024-08-19T23:11:44Z",
+        "results_count": 1,
+        "rules_count": 1,
+        "id": 269226625,
+        "url": "https://api.github.com/repos/emilioc7/checkov-example/code-scanning/analyses/269226625",
+        "sarif_id": "66faeba6-5e80-11ef-9f1e-44aa2ae50f90",
+        "tool": {
+            "name": "checkov",
+            "guid": null,
+            "version": "3.2.220"
+        },
+        "deletable": false,
+        "warning": ""
+    },
+    {
+        "ref": "refs/heads/main",
+        "commit_sha": "590070406ba3fbc33f26de1b1fe3e8f9532c3850",
+        "analysis_key": ".github/workflows/main-workflow.yml:scan",
+        "environment": "{}",
+        "category": "checkov-analysis-results",
+        "error": "",
+        "created_at": "2024-08-19T23:07:24Z",
+        "results_count": 4,
+        "rules_count": 4,
+        "id": 269224371,
+        "url": "https://api.github.com/repos/emilioc7/checkov-example/code-scanning/analyses/269224371",
+        "sarif_id": "cbbab798-5e7f-11ef-88c2-83c0bf997dc9",
+        "tool": {
+            "name": "checkov",
+            "guid": null,
+            "version": "3.2.220"
+        },
+        "deletable": false,
+        "warning": ""
+    },
+    {
+        "ref": "refs/heads/main",
+        "commit_sha": "3cccfcdb408895911473e590ae459009d1503048",
+        "analysis_key": ".github/workflows/main-workflow.yml:scan",
+        "environment": "{}",
+        "category": "checkov-analysis-results",
+        "error": "",
+        "created_at": "2024-08-19T22:33:27Z",
+        "results_count": 10,
+        "rules_count": 10,
+        "id": 269207397,
+        "url": "https://api.github.com/repos/emilioc7/checkov-example/code-scanning/analyses/269207397",
+        "sarif_id": "0dafc49a-5e7b-11ef-80f7-6f11f578aa83",
+        "tool": {
+            "name": "checkov",
+            "guid": null,
+            "version": "3.2.220"
+        },
+        "deletable": false,
+        "warning": ""
+    },
+    {
+        "ref": "refs/heads/main",
+        "commit_sha": "3cccfcdb408895911473e590ae459009d1503048",
+        "analysis_key": ".github/workflows/main-workflow.yml:scan",
+        "environment": "{}",
+        "category": "checkov-analysis-results",
+        "error": "",
+        "created_at": "2024-08-19T22:31:30Z",
+        "results_count": 10,
+        "rules_count": 10,
+        "id": 269206516,
+        "url": "https://api.github.com/repos/emilioc7/checkov-example/code-scanning/analyses/269206516",
+        "sarif_id": "c7b0d15a-5e7a-11ef-954d-8595bf35ee52",
+        "tool": {
+            "name": "checkov",
+            "guid": null,
+            "version": "3.2.220"
+        },
+        "deletable": false,
+        "warning": ""
+    },
+    {
+        "ref": "refs/heads/main",
+        "commit_sha": "484845f2f928aecfd5792a7e038ccb7184af8dac",
+        "analysis_key": ".github/workflows/main-workflow.yml:scan",
+        "environment": "{}",
+        "category": "checkov-analysis-results",
+        "error": "",
+        "created_at": "2024-08-18T21:18:30Z",
+        "results_count": 10,
+        "rules_count": 10,
+        "id": 268463479,
+        "url": "https://api.github.com/repos/emilioc7/checkov-example/code-scanning/analyses/268463479",
+        "sarif_id": "6acfa778-5da7-11ef-80d6-ab2f9eef8743",
+        "tool": {
+            "name": "checkov",
+            "guid": null,
+            "version": "3.2.220"
+        },
+        "deletable": false,
+        "warning": ""
+    },
+    {
+        "ref": "refs/heads/main",
+        "commit_sha": "ec3733e571ebc3fcb181cce6b2800a166fa63e20",
+        "analysis_key": ".github/workflows/main-workflow.yml:scan",
+        "environment": "{}",
+        "category": "checkov-analysis-results",
+        "error": "",
+        "created_at": "2024-08-18T20:33:49Z",
+        "results_count": 12,
+        "rules_count": 12,
+        "id": 268454473,
+        "url": "https://api.github.com/repos/emilioc7/checkov-example/code-scanning/analyses/268454473",
+        "sarif_id": "2d09840a-5da1-11ef-8b45-2aa3fc25b06c",
+        "tool": {
+            "name": "checkov",
+            "guid": null,
+            "version": "3.2.220"
+        },
+        "deletable": false,
+        "warning": ""
+    }
+]

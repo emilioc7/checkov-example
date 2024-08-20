@@ -1,0 +1,140 @@
+{
+    "runs": [
+        {
+            "artifacts": [
+                {
+                    "location": {
+                        "index": 0,
+                        "uri": "main.tf"
+                    }
+                }
+            ],
+            "automationDetails": {
+                "id": "checkov-analysis-results/"
+            },
+            "conversion": {
+                "tool": {
+                    "driver": {
+                        "name": "GitHub Code Scanning"
+                    }
+                }
+            },
+            "results": [
+                {
+                    "correlationGuid": "1790f025-555b-4ac4-addb-0d3064d66c90",
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "index": 0,
+                                    "uri": "main.tf"
+                                },
+                                "region": {
+                                    "endLine": 65,
+                                    "startColumn": 1,
+                                    "startLine": 18
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Ensure storage for critical data are encrypted with Customer Managed Key"
+                    },
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "f3350c497f8145b0:1"
+                    },
+                    "properties": {
+                        "github/alertNumber": 17,
+                        "github/alertUrl": "https://api.github.com/repos/emilioc7/checkov-example/code-scanning/alerts/17"
+                    },
+                    "rule": {
+                        "id": "CKV2_AZURE_1",
+                        "index": 0
+                    },
+                    "ruleId": "CKV2_AZURE_1",
+                    "suppressions": [
+                        {
+                            "state": "accepted"
+                        }
+                    ]
+                },
+                {
+                    "correlationGuid": "4c6be1b7-757a-4056-a697-3236ac3e4953",
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "index": 0,
+                                    "uri": "main.tf"
+                                },
+                                "region": {
+                                    "endLine": 158,
+                                    "startColumn": 1,
+                                    "startLine": 111
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Ensure storage for critical data are encrypted with Customer Managed Key"
+                    },
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "cb4307ee94b51ee2:1"
+                    },
+                    "properties": {
+                        "github/alertNumber": 18,
+                        "github/alertUrl": "https://api.github.com/repos/emilioc7/checkov-example/code-scanning/alerts/18"
+                    },
+                    "rule": {
+                        "id": "CKV2_AZURE_1",
+                        "index": 0
+                    },
+                    "ruleId": "CKV2_AZURE_1",
+                    "suppressions": [
+                        {
+                            "state": "accepted"
+                        }
+                    ]
+                }
+            ],
+            "tool": {
+                "driver": {
+                    "name": "checkov",
+                    "rules": [
+                        {
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "fullDescription": {
+                                "text": "Ensure storage for critical data are encrypted with Customer Managed Key"
+                            },
+                            "help": {
+                                "markdown": "Ensure storage for critical data are encrypted with Customer Managed Key\nResource: azurerm_storage_account.tfstate",
+                                "text": "Ensure storage for critical data are encrypted with Customer Managed Key\nResource: azurerm_storage_account.tfstate"
+                            },
+                            "helpUri": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-general-policies/ensure-storage-for-critical-data-are-encrypted-with-customer-managed-key",
+                            "id": "CKV2_AZURE_1",
+                            "name": "Ensure storage for critical data are encrypted with Customer Managed Key",
+                            "properties": {},
+                            "shortDescription": {
+                                "text": "Ensure storage for critical data are encrypted with Customer Managed Key"
+                            }
+                        }
+                    ],
+                    "version": "3.2.230"
+                }
+            },
+            "versionControlProvenance": [
+                {
+                    "branch": "refs/heads/main",
+                    "repositoryUri": "https://github.com/emilioc7/checkov-example",
+                    "revisionId": "1adfaa91e0fc8256b6e6e4dabcb74c0cf437e7cc"
+                }
+            ]
+        }
+    ],
+    "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+    "version": "2.1.0"
+}

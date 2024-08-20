@@ -1,0 +1,98 @@
+[
+    {
+        "number": 18,
+        "created_at": "2024-08-20T00:41:44Z",
+        "updated_at": "2024-08-20T00:41:44Z",
+        "url": "https://api.github.com/repos/emilioc7/checkov-example/code-scanning/alerts/18",
+        "html_url": "https://github.com/emilioc7/checkov-example/security/code-scanning/18",
+        "state": "open",
+        "fixed_at": null,
+        "dismissed_by": null,
+        "dismissed_at": null,
+        "dismissed_reason": null,
+        "dismissed_comment": null,
+        "rule": {
+            "id": "CKV2_AZURE_1",
+            "severity": "warning",
+            "description": "Ensure storage for critical data are encrypted with Customer Managed Key",
+            "name": "Ensure storage for critical data are encrypted with Customer Managed Key",
+            "tags": [],
+            "full_description": "Ensure storage for critical data are encrypted with Customer Managed Key",
+            "help": "Ensure storage for critical data are encrypted with Customer Managed Key\nResource: azurerm_storage_account.tfstate",
+            "help_uri": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-general-policies/ensure-storage-for-critical-data-are-encrypted-with-customer-managed-key"
+        },
+        "tool": {
+            "name": "checkov",
+            "guid": null,
+            "version": "3.2.230"
+        },
+        "most_recent_instance": {
+            "ref": "refs/heads/main",
+            "analysis_key": ".github/workflows/main-workflow.yml:scan",
+            "environment": "{}",
+            "category": "checkov-analysis-results",
+            "state": "open",
+            "commit_sha": "1adfaa91e0fc8256b6e6e4dabcb74c0cf437e7cc",
+            "message": {
+                "text": "Ensure storage for critical data are encrypted with Customer Managed Key"
+            },
+            "location": {
+                "path": "main.tf",
+                "start_line": 111,
+                "end_line": 158,
+                "start_column": 1,
+                "end_column": 0
+            },
+            "classifications": []
+        },
+        "instances_url": "https://api.github.com/repos/emilioc7/checkov-example/code-scanning/alerts/18/instances"
+    },
+    {
+        "number": 17,
+        "created_at": "2024-08-20T00:41:44Z",
+        "updated_at": "2024-08-19T17:56:05Z",
+        "url": "https://api.github.com/repos/emilioc7/checkov-example/code-scanning/alerts/17",
+        "html_url": "https://github.com/emilioc7/checkov-example/security/code-scanning/17",
+        "state": "open",
+        "fixed_at": null,
+        "dismissed_by": null,
+        "dismissed_at": null,
+        "dismissed_reason": null,
+        "dismissed_comment": null,
+        "rule": {
+            "id": "CKV2_AZURE_1",
+            "severity": "warning",
+            "description": "Ensure storage for critical data are encrypted with Customer Managed Key",
+            "name": "Ensure storage for critical data are encrypted with Customer Managed Key",
+            "tags": [],
+            "full_description": "Ensure storage for critical data are encrypted with Customer Managed Key",
+            "help": "Ensure storage for critical data are encrypted with Customer Managed Key\nResource: azurerm_storage_account.tfstate",
+            "help_uri": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-general-policies/ensure-storage-for-critical-data-are-encrypted-with-customer-managed-key"
+        },
+        "tool": {
+            "name": "checkov",
+            "guid": null,
+            "version": "3.2.230"
+        },
+        "most_recent_instance": {
+            "ref": "refs/heads/main",
+            "analysis_key": ".github/workflows/main-workflow.yml:scan",
+            "environment": "{}",
+            "category": "checkov-analysis-results",
+            "state": "open",
+            "commit_sha": "1adfaa91e0fc8256b6e6e4dabcb74c0cf437e7cc",
+            "message": {
+                "text": "Ensure storage for critical data are encrypted with Customer Managed Key"
+            },
+            "location": {
+                "path": "main.tf",
+                "start_line": 18,
+                "end_line": 65,
+                "start_column": 1,
+                "end_column": 0
+            },
+            "classifications": []
+        },
+        "instances_url": "https://api.github.com/repos/emilioc7/checkov-example/code-scanning/alerts/17/instances"
+    }
+]
