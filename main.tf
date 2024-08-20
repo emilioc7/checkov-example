@@ -107,6 +107,7 @@ resource "azurerm_private_endpoint" "example" {
 
 
 
+
 resource "azurerm_storage_account" "new_storage_emc" {
   #checkov:skip=CKV2_AZURE_1:No need for customer managed keys - Account Name:new_storage_emc
   name                            = "newstorage{random_string.resource_code.result}"
@@ -154,4 +155,19 @@ resource "azurerm_storage_account" "new_storage_emc" {
     }
   }
 
+}
+
+
+resource "azurerm_private_endpoint" "example2" {
+  name                = "example_private_endpoint2"
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+  subnet_id           = azurerm_subnet.example.id
+
+  private_service_connection {
+    name                           = "example_psc2"
+    is_manual_connection           = false
+    private_connection_resource_id = azurerm_storage_account.new_storage_emc.id
+    subresource_names              = ["blob"]
+  }
 }
