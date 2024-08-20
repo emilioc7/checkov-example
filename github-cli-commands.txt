@@ -1,0 +1,18 @@
+
+checkov Output Examples: --output {cli,csv,cyclonedx,cyclonedx_json,json,junitxml,github_failed_only,gitlab_sast,sarif,spdx}
+
+
+gh api -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" /repos/emilioc7/checkov-example/code-scanning/alerts
+
+
+
+gh api -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" /repos/emilioc7/checkov-example/code-scanning/analyses
+
+
+
+gh api -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" /repos/emilioc7/checkov-example/code-scanning/analyses/269267712
+
+gh api -H "Accept: application/sarif+json" -H "X-GitHub-Api-Version: 2022-11-28" /repos/emilioc7/checkov-example/code-scanning/analyses/269267712  > code_analysis_specific_repo_formatJSON_SARIF2.json
+gh api -H "Accept: application/sarif+json" -H "X-GitHub-Api-Version: 2022-11-28" /repos/emilioc7/checkov-example/code-scanning/analyses/269321705  > code_analysis_specific_repo_formatJSON_SARIF_269321705.json
+gh api -H "Accept: application/sarif+json" -H "X-GitHub-Api-Version: 2022-11-28" /repos/emilioc7/checkov-example/code-scanning/analyses/269735386  > code_analysis_specific_repo_formatJSON_SARIF_269735386.json
+gh api -H "Accept: application/sarif+json" -H "X-GitHub-Api-Version: 2022-11-28" /repos/emilioc7/checkov-example/code-scanning/analyses/269740563  > code_analysis_specific_repo_formatJSON_SARIF_269740563.json

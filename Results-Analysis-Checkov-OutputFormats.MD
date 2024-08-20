@@ -78,4 +78,5 @@
 6 - For each element in the result object, create a tracking Item in the corresponding tracking platform (ADO BOARD, ServiceNow)
    - Avoid duplicates using the "correlationGuid"
    - Avoid duplicates using the "ruleId"
+   - void duplicated using the "versionControlProvenance.branch"
    - Reopen Item if they are reOpened in GitHub Code Analisys
