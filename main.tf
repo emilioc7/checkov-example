@@ -15,6 +15,18 @@ resource "random_string" "resource_code" {
   upper   = false
 }
 
+resource "random_string" "resource_code2" {
+  length  = 5
+  special = false
+  upper   = false
+}
+
+resource "random_string" "resource_code3" {
+  length  = 5
+  special = false
+  upper   = false
+}
+
 resource "azurerm_storage_account" "tfstate" {
   name                            = "tfstate${random_string.resource_code.result}"
   resource_group_name             = azurerm_resource_group.rg.name
