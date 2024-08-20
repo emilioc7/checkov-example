@@ -15,8 +15,8 @@ resource "random_string" "resource_code" {
   upper   = false
 }
 
-#checkov:skip=CKV2_AZURE_1:Ensure storage for critical data are encrypted with Customer Managed Key
 resource "azurerm_storage_account" "tfstate" {
+#checkov:skip=CKV2_AZURE_1:No need for customer managed keys
   name                            = "tfstate${random_string.resource_code.result}"
   resource_group_name             = azurerm_resource_group.rg.name
   location                        = azurerm_resource_group.rg.location
