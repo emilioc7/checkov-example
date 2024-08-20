@@ -16,7 +16,7 @@ resource "random_string" "resource_code" {
 }
 
 resource "azurerm_storage_account" "tfstate" {
-#checkov:skip=CKV2_AZURE_1:No need for customer managed keys
+  #checkov:skip=CKV2_AZURE_1:No need for customer managed keys - Account Name:tfstate
   name                            = "tfstate${random_string.resource_code.result}"
   resource_group_name             = azurerm_resource_group.rg.name
   location                        = azurerm_resource_group.rg.location
@@ -91,10 +91,10 @@ resource "azurerm_log_analytics_storage_insights" "analytics_storage_insights_ok
 
 
 resource "azurerm_private_endpoint" "example" {
-  name                 = "example_private_endpoint"
-  location             = azurerm_resource_group.rg.location
-  resource_group_name  = azurerm_resource_group.rg.name
-  subnet_id            = azurerm_subnet.example.id
+  name                = "example_private_endpoint"
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+  subnet_id           = azurerm_subnet.example.id
 
   private_service_connection {
     name                           = "example_psc"
@@ -108,6 +108,7 @@ resource "azurerm_private_endpoint" "example" {
 
 
 resource "azurerm_storage_account" "new_storage_emc" {
+  #checkov:skip=CKV2_AZURE_1:No need for customer managed keys - Account Name:new_storage_emc
   name                            = "newstorage{random_string.resource_code.result}"
   resource_group_name             = azurerm_resource_group.rg.name
   location                        = azurerm_resource_group.rg.location
@@ -121,7 +122,6 @@ resource "azurerm_storage_account" "new_storage_emc" {
   tags = {
     environment = "testing"
   }
-
   queue_properties {
     logging {
       delete                = true
@@ -150,7 +150,8 @@ resource "azurerm_storage_account" "new_storage_emc" {
 
   blob_properties {
     delete_retention_policy {
-      days = 10
+      days = 7
     }
   }
+
 }
