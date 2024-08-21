@@ -12,3 +12,4 @@ jobs:
       publicMessage: "This is a public message - NEW"
     secrets:
       secretMessage: ${{ secrets.SECRET_MESSAGE }}
+      GH_TOKEN: $${{ secrets.GH_TOKEN }}
