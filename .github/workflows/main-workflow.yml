@@ -10,6 +10,6 @@ jobs:
     with:
       checkov_version: "3.2.230"
       publicMessage: "This is a public message - NEW"
+      super_token: $${{ vars.ADO_TOKEN }}
     secrets:
       secretMessage: ${{ secrets.SECRET_MESSAGE }}
-      ADOWORKITEMSTOKEN: $${{ secrets.ADOWORKITEMSTOKEN }}
